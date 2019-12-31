@@ -1,0 +1,271 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§3.4 向量空间</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>3.4 向量空间</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、向量空间的概念</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义4.1：</span>n维实向量全体（或全体实行向量或全体实列向量）构成的集合，同时考虑到向量的线性运算，称为实n维向量空间，记作<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<br clear="none"/>
+<br clear="none"/>
+　　显然<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中任意两个向量的和向量还是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中的向量；<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中任意一个向量与一个实数的乘积也是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中的向量，今后我们可能只需要讨论<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中的某个子集合，引入子空间的概念。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义4.2：</span>设V为n维向量空间<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>的一个非空子集合，且满足：<br clear="none"/>
+　　（1）若<img align="absmiddle" height="21" src="images/03/image163.gif" width="59"/>，则<img align="absmiddle" height="21" src="images/03/image164.gif" width="68"/>；<br clear="none"/>
+　　（2）若<img align="absmiddle" height="21" src="images/03/image165.gif" width="81"/>，则<img align="absmiddle" height="19" src="images/03/image166.gif" width="49"/>；<br clear="none"/>
+则称集合V是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>的子空间，也称V为向量空间。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　定义4.2中的条件（1），（2）说明：要求集合V对向量的加法运算与数乘运算封闭。<br clear="none"/>
+　　<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>的子集<img align="absmiddle" height="27" src="images/03/image167.gif" width="52"/>是最简单的子空间，称为零空间。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>验证<img align="absmiddle" height="20" src="images/03/image168.gif" width="21"/>中的以下子集是否为向量空间。<br clear="none"/>
+　　　　　<img align="absmiddle" height="88" src="images/03/image169.gif" width="211"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="24" src="images/03/image170.gif" width="16"/>中向量的特征是第一个分量为0，即<img align="absmiddle" height="24" src="images/03/image170.gif" width="16"/>是由所有第一个分量为0的4维向量组成的子集合，显然是非空的。<br clear="none"/>
+<span class="bold">　　　　</span>在<img align="absmiddle" height="24" src="images/03/image170.gif" width="16"/>中任取两个向量<img align="absmiddle" height="24" src="images/03/image171.gif" width="227"/>及常数k，因<img align="absmiddle" height="24" src="images/03/image172.gif" width="249"/>
+<img align="absmiddle" height="24" src="images/03/image173.gif" width="163"/>，说明<img align="absmiddle" height="24" src="images/03/image170.gif" width="16"/>对加法及数乘封闭，故<img align="absmiddle" height="24" src="images/03/image170.gif" width="16"/>是向量空间。<br clear="none"/>
+<span class="bold">　　　　</span>类似可以验证<img align="absmiddle" height="24" src="images/03/image174.gif" width="17"/>也是向量空间。<br clear="none"/>
+<span class="bold">　　　　</span>而对集合<img align="absmiddle" height="24" src="images/03/image175.gif" width="17"/>，显然<img align="absmiddle" height="24" src="images/03/image175.gif" width="17"/>中任意两个向量的和向量的第一个分量为2，即<img align="absmiddle" height="24" src="images/03/image175.gif" width="17"/>对加法不封闭，故<img align="absmiddle" height="24" src="images/03/image175.gif" width="17"/>不是向量空间。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>
+<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中一个向量组，考虑由它们的线性组合全体所组成的向量集合。<br clear="none"/>
+　　　　　<img align="absmiddle" height="27" src="images/03/image176.gif" width="267"/>
+<br clear="none"/>
+　　　　　由于V是由该向量组的全体线性组合构成的集合，故V对向量的线性运算必封闭，所以V是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中一个子空间，称它为由<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>生成的向量空间，记为<img align="absmiddle" height="24" src="images/03/image177.gif" width="133"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、基与维数及坐标</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义4.3：</span>设V是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中一个向量空间，若V中向量<img align="absmiddle" height="24" src="images/03/image128.gif" width="83"/>满足：<br clear="none"/>
+　　（1）<img align="absmiddle" height="24" src="images/03/image128.gif" width="83"/>线性无关；<br clear="none"/>
+　　（2）V中任意一个向量<img align="absmiddle" height="15" src="images/03/image018.gif" width="16"/>都可由<img align="absmiddle" height="24" src="images/03/image128.gif" width="83"/>线性表出。<br clear="none"/>
+则称向量组<img align="absmiddle" height="24" src="images/03/image128.gif" width="83"/>为向量空间V的一个基，其中每个<img align="absmiddle" height="24" src="images/03/image178.gif" width="104"/>称为基向量，基向量的个数r称为V的维数，记为<img align="absmiddle" height="19" src="images/03/image179.gif" width="65"/>，并称V为r维向量空间。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　由基的定义可知，向量空间V的一个基，实际上就是向量集合V中一个极大线性无关组，V的维数就是极大无关组中所含向量的个数，也即V的秩，因此向量空间的维数是唯一的，不会随基的改变而改变。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例3：</span>已知<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>中的n维标准向量组<img align="absmiddle" height="24" src="images/03/image081.gif" width="76"/>是线性无关的，且每个n维向量都可由该向量组线性表出，由定义4.3可知，<img align="absmiddle" height="24" src="images/03/image081.gif" width="76"/>是<img align="absmiddle" height="20" src="images/03/image162.gif" width="21"/>的一个基，于是<img align="absmiddle" height="21" src="images/03/image180.gif" width="73"/>。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例4：</span>零空间的维数为0。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例5：</span>设<img align="absmiddle" height="24" src="images/03/image177.gif" width="133"/>，则向量组<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>的一个极大无关组就是V的一个基，而向量组的秩就是V的维数。<br clear="none"/>
+<span class="bold">　　注意：</span>（1）前面我们有向量的维数是指向量中分量的个数，现在引入向量空间的维数是指基中基向量的个数，这是两个不同的概念。<br clear="none"/>
+
+<span class="bold">　　　　　</span>（2）若<img align="absmiddle" height="19" src="images/03/image179.gif" width="65"/>，则V中任意r个线性无关的向量都是V的一个基，而任意两个基都是等价的，例如三维向量<img align="absmiddle" height="20" src="images/03/image181.gif" width="23"/>中任意三个线性无关向量都是基。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义4.4：</span>设<img align="absmiddle" height="27" src="images/03/image182.gif" width="116"/>是向量空间V的一个基，则V中任一个向量<img align="absmiddle" height="15" src="images/03/image018.gif" width="16"/>都可用<img align="absmiddle" height="24" src="images/03/image183.gif" width="83"/>唯一的线性表示为<img align="absmiddle" height="24" src="images/03/image184.gif" width="169"/>用r个表出系数组成的r维列向量<img align="absmiddle" height="25" src="images/03/image185.gif" width="95"/>称为向量<img align="absmiddle" height="15" src="images/03/image018.gif" width="16"/>在基S下的坐标。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例6：</span>说明<img align="absmiddle" height="24" src="images/03/image186.gif" width="265"/>构成<img align="absmiddle" height="23" src="images/03/image187.gif" width="20"/>的一个基，并求出<img align="absmiddle" height="21" src="images/03/image188.gif" width="84"/>在此基下的坐标。<br clear="none"/>
+<span class="bold">　　解：</span>要证明<img align="absmiddle" height="24" src="images/03/image189.gif" width="61"/>构成<img align="absmiddle" height="23" src="images/03/image187.gif" width="20"/>的一个基，只要证明<img align="absmiddle" height="24" src="images/03/image189.gif" width="61"/>线性无关；要求出<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>在此基下的坐标，只要求解线性方程组，这两步合在一起讨论。<br clear="none"/>
+<span class="bold">　　　　</span>考虑线性方程组<img align="absmiddle" height="24" src="images/03/image190.gif" width="144"/>，其增广矩阵为
+<br clear="none"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="131" src="images/03/image191.gif" width="289"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>可知<img align="absmiddle" height="25" src="images/03/image065.gif" width="103"/>，即<img align="absmiddle" height="27" src="images/03/image192.gif" width="108"/>，所以，<img align="absmiddle" height="24" src="images/03/image039.gif" width="61"/>为<img align="absmiddle" height="20" src="images/03/image193.gif" width="20"/>的一个基。<br clear="none"/>
+<span class="bold">　　　　</span>方程组有唯一解为<img align="absmiddle" height="41" src="images/03/image194.gif" width="167"/>于是<img align="absmiddle" height="41" src="images/03/image195.gif" width="153"/>，所求坐标为
+<br clear="none"/>
+　　　　<img align="absmiddle" height="49" src="images/03/image196.gif" width="95"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例7：</span>求<img align="absmiddle" height="20" src="images/03/image168.gif" width="21"/>中由向量<img align="absmiddle" height="25" src="images/03/image197.gif" width="328"/>
+<img align="absmiddle" height="25" src="images/03/image198.gif" width="116"/>生成的子空间的一个基和维数。<br clear="none"/>
+<span class="bold">　　解：</span>本题相当于求向量组的一个极大无关组和秩设矩阵<img align="absmiddle" height="96" src="images/03/image199.gif" width="264"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>因此，<img align="absmiddle" height="24" src="images/03/image039.gif" width="61"/>就是由<img align="absmiddle" height="24" src="images/03/image200.gif" width="83"/>生成的子空间的一个基，生成的子空间的维数为3。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+

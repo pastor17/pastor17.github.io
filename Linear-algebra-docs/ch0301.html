@@ -1,0 +1,414 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§3.1 n维向量概念及线性运算</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>3.1 n维向量概念及线性运算</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、n维向量</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<span class="bold">定义1.1</span>：<span class="bold">由n个数<img align="absmiddle" height="24" src="images/03/image001.gif" width="77"/>组成的一个有序数值称为一个n维向量，数<img align="absmiddle" height="24" src="images/03/image002.gif" width="16"/>称为该n维向量的第i个分量。</span>
+<br clear="none"/>
+　　若该向量表示成一列<img align="absmiddle" height="99" src="images/03/image003.gif" width="35"/>，称为<span class="bold">n维列向量</span>，它也就是<img align="absmiddle" height="19" src="images/03/image004.gif" width="31"/>矩阵；若该向量表示成一行<img align="absmiddle" height="24" src="images/03/image005.gif" width="91"/>，称为<span class="bold">n维行向量</span>，它也就是<img align="absmiddle" height="19" src="images/03/image006.gif" width="31"/>矩阵。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<br clear="none"/>
+　　今后，我们用小写字母<img align="absmiddle" height="21" src="images/03/image007.gif" width="48"/>等表示向量，而且约定，一般表示列向量。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.2：</span>分量全为零的向量称为零向量，记作O。<br clear="none"/>
+　　若干个同维数的向量所组成的集合叫做向量组。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　当然我们要求向量组中向量或全是行向量，或全是列向量，本章重点讨论一个向量组中向量之间的关系。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="bold">例1：</span>设A为一个<img align="absmiddle" height="15" src="images/03/image008.gif" width="37"/>矩阵，如将A按列分块，得<img align="absmiddle" height="24" src="images/03/image009.gif" width="121"/>，其中每一个<img align="absmiddle" height="25" src="images/03/image010.gif" width="111"/>为一个m维列向量，称<img align="absmiddle" height="24" src="images/03/image011.gif" width="83"/>，为<span class="bold">矩阵A的列向量组</span>；如将A按行分块，得<img align="absmiddle" height="99" src="images/03/image012.gif" width="67"/>其中每个<img align="absmiddle" height="24" src="images/03/image013.gif" width="108"/>为一个n维行向量，称<img align="absmiddle" height="24" src="images/03/image014.gif" width="85"/>为<span class="bold">矩阵A的行向量组</span>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、向量的线性运算</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　既然向量作为一个特殊的矩阵，则与矩阵类似，有以下向量的相等、负向量及向量线性运算的定义。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.3：</span>如果n维向量<img align="absmiddle" height="25" src="images/03/image015.gif" width="123"/>与n维向量<img align="absmiddle" height="25" src="images/03/image016.gif" width="120"/>的对应分量都相等，即<img align="absmiddle" height="24" src="images/03/image017.gif" width="132"/>，则称向量<img align="absmiddle" height="15" src="images/03/image018.gif" width="16"/>与<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>相等，记作<img align="absmiddle" height="21" src="images/03/image020.gif" width="43"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<span class="bold">　　注意：</span>一个行向量与一个列向量即使对应的分量相等，也不能说这两个向量相等。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.4：</span>设向量<img align="absmiddle" height="25" src="images/03/image015.gif" width="123"/>，把<img align="absmiddle" height="25" src="images/03/image021.gif" width="160"/>称为<img align="absmiddle" height="15" src="images/03/image018.gif" width="16"/>的负向量。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　定义1.5（向量的加法）</span>
+<br clear="none"/>
+　　设n维向量<img align="absmiddle" height="25" src="images/03/image015.gif" width="123"/>，<img align="absmiddle" height="25" src="images/03/image016.gif" width="120"/>，则规定向量的加法：<img align="absmiddle" height="25" src="images/03/image022.gif" width="229"/>，利用负向量，定义减法：<img align="absmiddle" height="25" src="images/03/image023.gif" width="301"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　定义1.6（数与向量的数量乘法）</span>
+<br clear="none"/>
+　　设<img align="absmiddle" height="25" src="images/03/image015.gif" width="123"/>是一个n维向量，<img align="absmiddle" height="19" src="images/03/image024.gif" width="13"/>为一个数，则规定<img align="absmiddle" height="25" src="images/03/image025.gif" width="152"/>
+<br clear="none"/>
+<br clear="none"/>
+　　向量的加法运算与数乘运算统称为<span class="bold">向量的线性运算</span>，它们满足与矩阵的线性运算完全相同的8条运算规律。<br clear="none"/>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>设有3维向量组<img align="absmiddle" height="25" src="images/03/image026.gif" width="84"/>，<img align="absmiddle" height="25" src="images/03/image027.gif" width="96"/>，<img align="absmiddle" height="25" src="images/03/image028.gif" width="97"/>，求向量<img align="absmiddle" height="24" src="images/03/image029.gif" width="93"/>
+<br clear="none"/>
+　　<span class="bold">解：</span>
+<img align="texttop" height="101" src="images/03/image030.gif" width="235"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例2：</span>设<img align="absmiddle" height="24" src="images/03/image031.gif" width="220"/>，求满足<img align="absmiddle" height="21" src="images/03/image032.gif" width="104"/>的向量<img align="absmiddle" height="17" src="images/03/image033.gif" width="13"/>。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="texttop" height="171" src="images/03/image034.gif" width="243"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_1" id="part3_1">
+<h2>三、线性表出与线性组合</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_03_01" class="part3_1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.7：</span>设<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>是一组n维向量，<img align="absmiddle" height="24" src="images/03/image036.gif" width="79"/>是一组常数，称向量<img align="absmiddle" height="24" src="images/03/image037.gif" width="148"/>为<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>的一个线性组合，常数<img align="absmiddle" height="24" src="images/03/image036.gif" width="79"/>为该线性组合的组合系数。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　定义1.8：</span>设有n维向量组<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>及向量<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>，若存在常数<img align="absmiddle" height="24" src="images/03/image036.gif" width="79"/>，使得<img align="absmiddle" height="24" src="images/03/image038.gif" width="175"/>，则称向量<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>可用<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>线性表出（或线性表示），或称<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>是<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>的线性组合，仍称<img align="absmiddle" height="24" src="images/03/image036.gif" width="79"/>为组合系数或表出系数，否则称<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>不能用<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>线性表出。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<span class="bold">　　例如：</span>在例1中，<img align="absmiddle" height="24" src="images/03/image029.gif" width="93"/>为向量组<img align="absmiddle" height="24" src="images/03/image039.gif" width="61"/>的一个线性组合，若记<img align="absmiddle" height="24" src="images/03/image040.gif" width="108"/>，由<img align="absmiddle" height="24" src="images/03/image041.gif" width="121"/>。所以<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>可用<img align="absmiddle" height="24" src="images/03/image039.gif" width="61"/>线性表出，2，3，-1为表出系数，又如，设<img align="absmiddle" height="25" src="images/03/image042.gif" width="176"/>，则向量<img align="absmiddle" height="24" src="images/03/image043.gif" width="85"/>不能用<img align="absmiddle" height="24" src="images/03/image044.gif" width="40"/>线性表出。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例3：</span>零向量可用任意一个向量组线性表出。<br clear="none"/>
+<span class="bold">　　　　</span> <img align="absmiddle" height="24" src="images/03/image045.gif" width="156"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例4：</span>考虑n维标准向量组：<img align="absmiddle" height="25" src="images/03/image046.gif" width="151"/>，<img align="absmiddle" height="21" src="images/03/image047.gif" width="79"/>，<img align="absmiddle" height="24" src="images/03/image048.gif" width="15"/>中第i个分量为1，其余分量都为0，则任意一个n维向量<img align="absmiddle" height="25" src="images/03/image049.gif" width="128"/>都可以唯一地表示成这n个标准向量的线性组合： <img align="absmiddle" height="24" src="images/03/image050.gif" width="164"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_3" id="part3_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　下面介绍线性方程组的向量表示法：<br clear="none"/>
+　　设由m个方程组成的n元线性方程组<img align="absmiddle" height="99" src="images/03/image051.gif" width="269"/>
+<br clear="none"/>
+　　引入m维列向量<img align="absmiddle" height="99" src="images/03/image052.gif" width="69"/>
+<img align="absmiddle" height="21" src="images/03/image047.gif" width="79"/>，及<img align="absmiddle" height="99" src="images/03/image053.gif" width="60"/>
+<br clear="none"/>
+　　那末，线性方程组（1）即为<img align="absmiddle" height="99" src="images/03/image054.gif" width="264"/>，或<img align="absmiddle" height="24" src="images/03/image055.gif" width="169"/>
+<br clear="none"/>
+　　显然n元齐次线性方程组的向量表示法为：<img align="absmiddle" height="24" src="images/03/image056.gif" width="169"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_1" id="part4_1">
+<h2>四、线性表出的判定及表出系数的求法</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_03_02" class="part4_1">
+<br clear="none"/>
+　　对于给定的n维向量组<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>及向量<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>，如何判断<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>能否用<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>线性表出呢？<br clear="none"/>
+　　考虑由<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>与<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>组成的m元线性方程组<img align="absmiddle" height="24" src="images/03/image057.gif" width="177"/>，方程组中方程个数就是向量维数n，由线性表出定义，显然有下述定理：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理1.1：</span>向量<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>可以由向量组<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>线性表出<img align="absmiddle" height="16" src="images/03/image058.gif" width="23"/>线性方程组<img align="absmiddle" height="24" src="images/03/image057.gif" width="177"/>有解，且方程组的一个解就是一个表出系数。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　若方程组有唯一解，则表明<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>可由<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>线性表出，且表示法唯一；若方程组有无穷多解，则表明<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>可由<img align="absmiddle" height="24" src="images/03/image035.gif" width="85"/>线性表出，且表出方式有无穷多种。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_2" id="part4_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>向量<img align="absmiddle" height="24" src="images/03/image059.gif" width="89"/>能否表成<img align="absmiddle" height="25" src="images/03/image060.gif" width="84"/>，<img align="absmiddle" height="25" src="images/03/image061.gif" width="87"/>，<img align="absmiddle" height="25" src="images/03/image062.gif" width="88"/>的线性组合？<br clear="none"/>
+<span class="bold">　　解：</span>考虑三元线性方程组<img align="absmiddle" height="24" src="images/03/image063.gif" width="144"/>，其增广矩阵<img align="absmiddle" height="75" src="images/03/image064.gif" width="319"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>所以，<img align="absmiddle" height="25" src="images/03/image065.gif" width="103"/>，方程组有唯一解<img align="absmiddle" height="75" src="images/03/image066.gif" width="59"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>所以，<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>可以由<img align="absmiddle" height="24" src="images/03/image039.gif" width="61"/>唯一地线性表出，且表示为：<img align="absmiddle" height="24" src="images/03/image067.gif" width="113"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_3" id="part4_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例3：</span>问<img align="absmiddle" height="21" src="images/03/image068.gif" width="77"/>能否表示成<img align="absmiddle" height="24" src="images/03/image069.gif" width="248"/>的线性组合？<br clear="none"/>
+<span class="bold">　　解：</span>本题中向量为3维行向量，可全部转置成3维列向量，再如上类似地讨论。<br clear="none"/>
+<span class="bold">　　　　</span>考虑三元线性方程组<img align="absmiddle" height="25" src="images/03/image070.gif" width="171"/>，其增广矩阵<img align="absmiddle" height="75" src="images/03/image071.gif" width="345"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则<img align="absmiddle" height="25" src="images/03/image072.gif" width="151"/>，说明方程组有无穷多解。<br clear="none"/>
+<span class="bold">　　　　</span>且一般解为<img align="absmiddle" height="51" src="images/03/image073.gif" width="93"/>，那么<img align="absmiddle" height="21" src="images/03/image019.gif" width="17"/>能用<img align="absmiddle" height="24" src="images/03/image039.gif" width="61"/>线性表出，且表出方式有无穷多种。<br clear="none"/>
+<span class="bold">　　　　</span>令<img align="absmiddle" height="24" src="images/03/image074.gif" width="43"/>，则一般表达式为：<img align="absmiddle" height="24" src="images/03/image075.gif" width="211"/>，其中k为任意常数。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_03_01" class="popup-questions" knowid="know_j_03_01" syncpart="part3_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="b" score="100">
+<p class="label">(单选题) 11．设β可由向量α<sub>1</sub>（1，0，0），α<sub>2</sub>（0，0，1）线性表示，则下列向量中β只能是（）　 　</p>
+<ul class="options">
+         <li code="a">A.（2，1，1）</li>
+	 <li code="b">B.（-3，0，2）</li>
+	 <li code="c">C.（1，1，0）</li>
+	 <li code="d">D.（0，-1，0）</li>
+</ul>
+<div class="answer">
+<p>【答案】B</p>
+<p>【解析】<img src="images/03/ch0301_clip_image002.gif" width="408" height="114" align="texttop"></p>
+<p>【知识点】线性表出与线性组合</p>
+</div>
+</div>
+</div>
+
+<div id="ques_03_02" class="popup-questions" knowid="know_j_03_02" syncpart="part4_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="c" score="100">
+<p class="label">(单选题) 12．设向量<img src="images/03/image279.gif" width="372" height="28" align="absmiddle">，则β由<img src="images/03/image280.gif" width="60" height="23" align="absmiddle">线性表出的表示式为（    ）。</p>
+<ul class="options">
+         <li code="a">A.<img src="images/03/image281.gif" width="90" height="28" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/03/image283.gif" width="88" height="28" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/03/image282.gif" width="88" height="28" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/03/image284.gif" width="83" height="28" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】C</p>
+<p>【解析】<img src="images/03/image285.gif" width="316" height="70" align="absmiddle"></p>
+<p>【知识点】线性表出的判定及表出系数的求法</p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,195 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§2.4 分块矩阵</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>2.4 分块矩阵</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、分块矩阵的概念</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义：</span>矩阵作为一个数表，当遇到行数和列数较高的矩阵时，我们可以把整个矩阵分割成若干个小块，每个小块叫做<span class="bold">矩阵的子块</span>，以子块为元素的，形式上的矩阵叫做<span class="bold">分块矩阵</span>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<br clear="none"/>
+　　把矩阵分块不仅可以带来运算上的方便，更对研究矩阵本身提供一种方法。<br clear="none"/>
+　　例如，设<img align="absmiddle" height="125" src="images/02/image226.gif" width="115"/>
+<br clear="none"/>
+　　如上图，我们把它分成4小块，令
+<br clear="none"/>
+　　<img align="absmiddle" height="75" src="images/02/image227.gif" width="208"/>，<img align="absmiddle" height="48" src="images/02/image228.gif" width="241"/>，
+<br clear="none"/>
+　　则A的一个分块矩阵为<img align="absmiddle" height="51" src="images/02/image229.gif" width="84"/>。
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　对任意一个<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵<img align="absmiddle" height="25" src="images/02/image230.gif" width="57"/>，常采用以下两种特殊的<span class="bold">分块方法</span>：<br clear="none"/>
+　　（1）<span class="bold">A的行分块矩阵或A的行向量表示法：</span>
+<br clear="none"/>
+　　 <img align="absmiddle" height="99" src="images/02/image231.gif" width="65"/>，其中<img align="absmiddle" height="24" src="images/02/image232.gif" width="212"/>
+<br clear="none"/>
+　　（2）<span class="bold">A的列分块矩阵或A的列向量表示法：</span>
+<br clear="none"/>
+　　 <img align="absmiddle" height="24" src="images/02/image233.gif" width="121"/>，其中<img align="absmiddle" height="104" src="images/02/image234.gif" width="159"/>
+<br clear="none"/>
+　　例如：<img align="absmiddle" height="75" src="images/02/image235.gif" width="100"/>
+<br clear="none"/>
+　　 令<img align="absmiddle" height="75" src="images/02/image236.gif" width="253"/>，则A的按列分块矩阵为<img align="absmiddle" height="27" src="images/02/image237.gif" width="124"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、分块矩阵的运算</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　分块矩阵的运算仅是前面矩阵运算的换一种表达方法，并没有给出新的定义，只是把小块当作元素来进行运算。<br clear="none"/>
+　　例如<span class="bold">分块矩阵的相加</span>就是把相应的子块相加；<span class="bold">分块矩阵的数乘</span>就是用数去乘每个子块；<span class="bold">分块矩阵的转置运算</span>，就是把子块转置过去，当然也要把每个子块转置；<span class="bold">分块矩阵的乘法</span>也是把左矩阵的行与右矩阵的列对应相乘再相加后，作为乘积矩阵中的子块。<br clear="none"/>
+　　这里特别要<span class="bold">注意</span>：为保证子块相乘是可行的，在进行分块矩阵的乘法时，必须要求左矩阵的列分块方式与右矩阵的行分块方式一般。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>设<img align="absmiddle" height="24" src="images/02/image238.gif" width="228"/>都是四阶方阵的列向量分块矩阵，已知<img align="absmiddle" height="27" src="images/02/image239.gif" width="95"/>，求行列式<img align="absmiddle" height="27" src="images/02/image240.gif" width="45"/>的值。<br clear="none"/>
+<span class="bold">　　解：</span>由分块矩阵加法，<img align="absmiddle" height="24" src="images/02/image241.gif" width="188"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>从而<br clear="none"/>
+　　　 <img align="absmiddle" height="85" hspace="12" src="images/02/image242.gif" width="249"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例2：</span>设<img align="absmiddle" height="24" src="images/02/image233.gif" width="121"/>是一个用列向量表示的分块矩阵，求其转置矩阵。<br clear="none"/>
+<span class="bold">　　解：</span>转置矩阵是：<img align="absmiddle" height="104" src="images/02/image243.gif" width="77"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例3：</span>设A为<img align="absmiddle" height="19" src="images/02/image244.gif" width="37"/>矩阵，B为<img align="absmiddle" height="19" src="images/02/image245.gif" width="35"/>矩阵，用分块矩阵表示出AB<br clear="none"/>
+<span class="bold">　　解：</span>AB为<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵，现把B按列分块表示为：<img align="absmiddle" height="24" src="images/02/image246.gif" width="121"/>，则
+<br clear="none"/>
+<br clear="none"/>
+　　　<img align="absmiddle" height="24" src="images/02/image247.gif" width="280"/>
+<br clear="none"/>
+　　　若把A按行分块为<img align="absmiddle" height="99" src="images/02/image248.gif" width="65"/>，则<img align="absmiddle" height="99" src="images/02/image249.gif" width="147"/>。<br clear="none"/>
+<br clear="none"/>
+　　　特别<img align="absmiddle" height="25" src="images/02/image250.gif" width="205"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3" id="part3">
+<h2>三、特殊分块矩阵求逆</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" css="color" id="part3_1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义：</span>形如<img align="absmiddle" height="99" src="images/02/image251.gif" width="105"/>的分块矩阵称为<span class="bold">分块对角矩阵</span>，其中<img align="absmiddle" height="24" src="images/02/image252.gif" width="80"/>均为方阵，空白处都是零块。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　分块对角矩阵有以下性质：<br clear="none"/>
+　　（1）<img align="absmiddle" height="27" src="images/02/image253.gif" width="115"/>
+<br clear="none"/>
+　　（2）A可逆<img align="absmiddle" height="16" src="images/02/image178.gif" width="23"/>
+<img align="absmiddle" height="24" src="images/02/image254.gif" width="80"/>均可逆，且<img align="absmiddle" height="104" src="images/02/image255.gif" width="152"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例4：</span>设A，B均为可逆矩阵，证明：<img align="absmiddle" height="55" src="images/02/image256.gif" width="136"/>，<img align="absmiddle" height="55" src="images/02/image257.gif" width="140"/>
+<br clear="none"/>
+<span class="bold">　　证明：</span>由分块矩阵乘法<br clear="none"/>
+　　　　　 <img align="absmiddle" height="53" src="images/02/image258.gif" width="291"/>
+<img align="absmiddle" height="48" src="images/02/image259.gif" width="60"/>
+<br clear="none"/>
+<span class="bold">　　　　　</span>所以<img align="absmiddle" height="55" src="images/02/image260.gif" width="137"/>
+<br clear="none"/>
+<span class="bold">　　　　　</span>又<img align="absmiddle" height="53" src="images/02/image261.gif" width="267"/>
+<br clear="none"/>
+<span class="bold">　　　　　</span>所以<img align="absmiddle" height="55" src="images/02/image262.gif" width="135"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+

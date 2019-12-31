@@ -1,0 +1,518 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§2.5 矩阵的初等变换与初等方阵</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>2.5 矩阵的初等变换与初等方阵</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、初等变换</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义5.1：</span>对矩阵A所施行的以下三种变换，称为矩阵的<span class="bold">初等行（列）变换</span>，统称为<span class="bold">矩阵的初等变换</span>：<br clear="none"/>
+　　　　　（ⅰ）交换A的某两行（列）；<br clear="none"/>
+　　　　　（ⅱ）用一个非零数k去乘A的某一行（列）；<br clear="none"/>
+　　　　　（ⅲ）把A中某一行（列）的倍数加到另一行（列）上。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<br clear="none"/>
+　　必须<span class="bold">注意</span>：矩阵的初等变换与行列式计算有本质<span class="bold">区别</span>，行列式计算是求值过程，前后用等号连接。对矩阵施行初等变换是变换过程，即把一个矩阵变成另一个矩阵，前后两个矩阵是不相等的。因此，我们用“<img align="absmiddle" height="15" src="images/02/image263.gif" width="20"/>”连接。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义5.2：</span>若矩阵A经过若干次初等变换变为B，则称<span class="bold">A与B等价</span>，记为<img align="absmiddle" height="17" src="images/02/image264.gif" width="43"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　显然等价的矩阵都是同型矩阵。<br clear="none"/>
+　　矩阵的<span class="bold">等价关系</span>有以下三条性质：<br clear="none"/>
+　　（1）反身性：<img align="absmiddle" height="17" src="images/02/image265.gif" width="43"/>
+<br clear="none"/>
+　　（2）对称性：若<img align="absmiddle" height="17" src="images/02/image264.gif" width="43"/>，则<img align="absmiddle" height="17" src="images/02/image266.gif" width="43"/>
+<br clear="none"/>
+　　（3）传递性：若<img align="absmiddle" height="17" src="images/02/image264.gif" width="43"/>，<img align="absmiddle" height="19" src="images/02/image267.gif" width="43"/>，则<img align="absmiddle" height="19" src="images/02/image268.gif" width="43"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、初等变换的目标与等价标准形</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　对给定矩阵施行初等变换，打算变换成什么样的矩阵？当然希望变得简单，有以下两种矩阵是变换的目标。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义5.3：</span>满足下列两个条件的矩阵称为<span class="bold">行阶梯形矩阵</span>（或<span class="bold">阶梯阵</span>）：<br clear="none"/>
+　　（1）如果存在零行（元素全为零的行），则零行都位于矩阵中非零行（元素不全为零的行）的下方；<br clear="none"/>
+　　（2）各非零行中从左边数起的第一个非零元素（称为主元）的列指标j随着行指标的递增而严格增大，即每个非零行的主元都必须位于上一个非零行的主元的右边。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<br clear="none"/>
+　　例如，<img align="absmiddle" height="96" src="images/02/image269.gif" width="163"/>均为阶梯阵。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义5.4：</span>如果阶梯形矩阵中的主元都是1，且这些主元1所在的列的其它元素全是零，称为行简化阶梯形矩阵（或<span class="bold">简化阶梯阵</span>）。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　 例如<img align="absmiddle" height="75" src="images/02/image270.gif" width="167"/>均为简化阶梯阵。<br clear="none"/>
+　　当然，单位方阵E也是简化阶梯阵。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理5.1：</span>任意一个矩阵A，一定可以经过若干次初等行变换化成阶梯阵，或者进一步，再经过若干次初等行变换化成简化阶梯形矩阵。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　注意：本定理中只要求对矩阵施行初等行变换，而不必作初等列变换。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>用初等行变换化矩阵A为阶梯阵及简化阶梯阵，其中<img align="absmiddle" height="96" src="images/02/image271.gif" width="132"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="96" src="images/02/image272.gif" width="281"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　<img align="absmiddle" height="96" src="images/02/image273.gif" width="332"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="96" src="images/02/image274.gif" width="321"/>
+<img align="absmiddle" height="96" src="images/02/image275.gif" width="177"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>上述B为阶梯形矩阵，C为简化阶梯形矩阵。<br clear="none"/>
+　　例题<span class="bold">说明</span>：对任意矩阵可以类似地用初等行变换化成阶梯阵，对例1，我们如果再施行初等列变换：<br clear="none"/>
+　　<img align="absmiddle" height="96" src="images/02/image276.gif" width="359"/>
+<br clear="none"/>
+　　把D称为<span class="bold">矩阵A的等价标准形</span>，一般地有：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理5.2：</span>任意一个矩阵A，一定可以经过有限次初等变换化成如下形式的矩阵：<img align="absmiddle" height="51" src="images/02/image277.gif" width="56"/>，称<img align="absmiddle" height="51" src="images/02/image277.gif" width="56"/>为矩阵A的等价标准形。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_1" id="part3_1">
+<h2>三、初等方阵</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义5.5：</span>由单位方阵E经过一次初等变换得到的矩阵称为<span class="bold">初等方阵</span>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　由于初等变换有三种，相应地初等方阵也有三种，以三阶为例：<br clear="none"/>
+　　<span class="bold">第一种：</span>
+<img align="absmiddle" height="75" src="images/02/image278.gif" width="225"/>
+<br clear="none"/>
+　　<span class="bold">第二种：</span>
+<img align="absmiddle" height="75" src="images/02/image279.gif" width="243"/>
+<br clear="none"/>
+　　<span class="bold">第三种：</span>
+<img align="absmiddle" height="75" src="images/02/image280.gif" width="249"/>
+<br clear="none"/>
+　　当然<img align="absmiddle" height="24" src="images/02/image281.gif" width="21"/>也是由<img align="absmiddle" height="24" src="images/02/image282.gif" width="20"/>交换第2，3列而得，<img align="absmiddle" height="24" src="images/02/image283.gif" width="41"/>由<img align="absmiddle" height="24" src="images/02/image282.gif" width="20"/>的第1列乘以非零数k而得，<img align="absmiddle" height="24" src="images/02/image284.gif" width="41"/>由<img align="absmiddle" height="24" src="images/02/image282.gif" width="20"/>的第3列的k倍加到第1列而得。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　由行列式性质，容易得到：<img align="absmiddle" height="29" src="images/02/image285.gif" width="207"/>，说明初等方阵都是可逆矩阵。且<img align="absmiddle" height="45" src="images/02/image286.gif" width="299"/>。<br clear="none"/>
+　　说明任何一种初等方阵的逆矩阵仍然是同一种初等方阵。<br clear="none"/>
+　　初等方阵与初等变换有下述<span class="bold">关系</span>。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理5.3：</span>用某一种初等矩阵左乘（右乘）矩阵A的结果相当于对A作同种类型的初等行（列）变换。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_1" id="part4_1">
+<h2>四、用初等行变换求可逆矩阵的逆矩阵</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_02_05" class="part4_1">
+<br clear="none"/>
+　　由定理5.1知，任何一个矩阵都能经过若干次初等行变换化成简化阶梯形矩阵，当这个矩阵A是可逆矩阵时，即存在若干个初等方阵<img align="absmiddle" height="24" src="images/02/image287.gif" width="77"/>，使得<img align="absmiddle" height="24" src="images/02/image288.gif" width="96"/>为简化阶梯形阵，它应是可逆的，那只能是单位方阵E，即必有
+<center>
+<img align="absmiddle" height="24" src="images/02/image289.gif" width="124"/>………（1）</center>
+　　也就有
+<center>
+<img align="absmiddle" height="25" src="images/02/image290.gif" width="133"/>………（2）</center>
+　　（1）、（2）式<span class="bold">说明</span>：当A是n阶可逆矩阵时，一定可以用有限次初等行变换把它化成单位方阵，而用同样的初等行变换则可把单位方阵E化为<img align="absmiddle" height="20" src="images/02/image163.gif" width="25"/>，由此我们得到以下用初等行变换求逆矩阵的<span class="bold">方法</span>：<br clear="none"/>
+　　<span class="bold">设A是n阶可逆矩阵，构造分块矩阵（A，E），它是<img align="absmiddle" height="19" src="images/02/image291.gif" width="43"/>矩阵，然后用初等行变换把(A，E)化成<img align="absmiddle" height="24" src="images/02/image292.gif" width="55"/>，即当（A，E）中A的部分化成E时，E就化成了<img align="absmiddle" height="20" src="images/02/image163.gif" width="25"/>。</span>
+<br clear="none"/>
+　　<span class="bold">注意：</span>对矩阵（A，E）只能施行初等行变换，绝不能用初等列变换。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_2" id="part4_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>求<img align="absmiddle" height="75" src="images/02/image293.gif" width="107"/>的逆矩阵。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="75" src="images/02/image294.gif" width="368"/>
+<br clear="none"/>
+　 　　　<img align="absmiddle" height="75" src="images/02/image295.gif" width="388"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则<img align="absmiddle" height="75" src="images/02/image296.gif" width="125"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part5_1" id="part5_1">
+<h2>五、用矩阵的初等变换求解矩阵方程</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_02_06" class="part5_1">
+<br clear="none"/>
+　　最常见的矩阵方程有以下<span class="bold">两类</span>：<br clear="none"/>
+　　（1）设A是n阶可逆矩阵，B是<img align="absmiddle" height="15" src="images/02/image105.gif" width="37"/>矩阵，求出未知矩阵X，满足AX=B。<br clear="none"/>
+<span class="bold">　　求矩阵X的方法：</span>
+<br clear="none"/>
+　　因为A可逆，故在方程两边左乘<img align="absmiddle" height="20" src="images/02/image163.gif" width="25"/>，得：<img align="absmiddle" height="20" src="images/02/image297.gif" width="67"/>
+<br clear="none"/>
+　　由前面，不妨设<br clear="none"/>
+　　<img align="absmiddle" height="24" src="images/02/image298.gif" width="100"/>……（1）<br clear="none"/>
+　　<img align="absmiddle" height="25" src="images/02/image299.gif" width="109"/>……（2）<br clear="none"/>
+　　<img align="absmiddle" height="25" src="images/02/image300.gif" width="120"/>……（3）<br clear="none"/>
+　　由（1），（3）联系起来，则<br clear="none"/>
+　　<img align="absmiddle" height="25" src="images/02/image301.gif" width="184"/>
+<br clear="none"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例3：</span>求解矩阵方程<img align="absmiddle" height="75" src="images/02/image302.gif" width="137"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>设A=<img align="absmiddle" height="75" src="images/02/image303.gif" width="69"/>，B=<img align="absmiddle" height="75" src="images/02/image304.gif" width="43"/>，则<img align="absmiddle" height="75" src="images/02/image305.gif" width="317"/>
+<br clear="none"/>
+　　　　 <img align="absmiddle" height="75" src="images/02/image306.gif" width="372"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="75" src="images/02/image307.gif" width="243"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>于是，<img align="absmiddle" height="75" src="images/02/image308.gif" width="132"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part5_2" id="part5_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　（2）设A是n阶可逆矩阵，B是<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵，求出未知矩阵X，满足<img align="absmiddle" height="17" src="images/02/image309.gif" width="52"/>。（由于矩阵乘法不满足交换律，读者要注意到<img align="absmiddle" height="17" src="images/02/image310.gif" width="55"/>与<img align="absmiddle" height="17" src="images/02/image309.gif" width="52"/>是不同的矩阵方程。）<br clear="none"/>
+　　把矩阵方程<img align="absmiddle" height="17" src="images/02/image309.gif" width="52"/>两边取转置，得到<img align="absmiddle" height="20" src="images/02/image311.gif" width="77"/>，从而<img align="absmiddle" height="24" src="images/02/image312.gif" width="101"/>，最后再把<img align="absmiddle" height="20" src="images/02/image313.gif" width="25"/>转置，即可求出X。<br clear="none"/>
+<span class="bold">　　解法：</span>
+<img align="absmiddle" height="25" src="images/02/image314.gif" width="183"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例4：</span>求解矩阵方程<img align="absmiddle" height="75" src="images/02/image315.gif" width="144"/>。<br clear="none"/>
+<span class="bold">　　解：</span>设<img align="absmiddle" height="75" src="images/02/image316.gif" width="173"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则<img align="absmiddle" height="75" src="images/02/image317.gif" width="285"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="75" src="images/02/image318.gif" width="303"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则<img align="absmiddle" height="75" src="images/02/image319.gif" width="101"/>，即有<img align="absmiddle" height="48" src="images/02/image320.gif" width="111"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_02_05" class="popup-questions" knowid="know_j_02_05" syncpart="part4_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="c" score="100">
+<p class="label">(单选题) 8．矩阵<img src="images/02/ch0205_clip_image002.gif" width="52" height="44" align="absmiddle">的逆矩阵是（　　　）</p>
+<ul class="options">
+         <li code="a">A.<img src="images/02/ch0205_clip_image0020.gif" width="60" height="50" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/02/ch0205_clip_image0002.gif" width="57" height="47" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/02/ch0205_clip_image002_0000.gif" width="54" height="61" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/02/ch0205_clip_image002_0001.gif" width="68" height="68" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】C</p>
+<p>【解析】<img src="images/02/ch0205_clip_image0001.gif" width="500" height="80" align="texttop"></p>
+<p>【知识点】用初等行变换求可逆矩阵的逆矩阵</p>
+</div>
+</div>
+</div>
+
+<div id="ques_02_06" class="popup-questions" knowid="know_j_02_06" syncpart="part5_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="d" score="100">
+<p class="label">(单选题) 9．已知<img src="images/02/ch0205_clip_image002000.gif" width="88" height="50" align="absmiddle">， <img src="images/02/ch0205_clip_image0040.gif" width="87" height="50" align="absmiddle">， <img src="images/02/ch0205_clip_image006.gif" width="99" height="56" align="absmiddle">，矩阵满足AXB=C，则X=（    ）。</p>
+<ul class="options">
+         <li code="a">A.<img src="images/02/ch0205_clip_image002_00001.gif" width="54" height="74" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/02/image503.gif" width="54" height="74" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/02/image504.gif" width="57" height="74" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/02/image505.gif" width="57" height="74" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】D</p>
+<p>【解析】 因为AXB=C,故<img src="images/02/image506.gif" width="112" height="27" align="absmiddle">,<br>
+而<img src="images/02/image507.gif" width="351" height="55" align="absmiddle"></p>
+所以  <img src="images/02/image508.gif" width="406" height="77" align="absmiddle">
+<p>【知识点】用矩阵的初等变换求解矩阵方程</p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,232 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§2.7 矩阵与线性方程组</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>2.7 矩阵与线性方程组</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、矩阵与线性方程组</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　<br clear="none"/>
+　　由矩阵与矩阵的乘法，我们已有线性方程组的矩阵表示<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>，其中<img align="absmiddle" height="25" src="images/02/image013.gif" width="75"/>为方程组的系数矩阵，b为常数项列矩阵，X为未知量列矩阵，当<img align="absmiddle" height="19" src="images/02/image343.gif" width="36"/>时，即<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>为齐次线性方程组。<br clear="none"/>
+　　对于一般的线性方程组，需要解决以下<span class="bold">三个问题</span>：<br clear="none"/>
+　　（1）如何判定方程组是否有解？<br clear="none"/>
+　　（2）如果方程组有解，它有多少个解？<br clear="none"/>
+　　（3）如何求出线性方程组的全部解？<br clear="none"/>
+<br clear="none"/>
+　　我们从求解线性方程组的方法谈起，读者可回忆，在初等数学中，求解线性方程组的消元法，无非是对线性方程组作下列<span class="bold">三种变换</span>：<br clear="none"/>
+　　（1）互换两个方程的位置；<br clear="none"/>
+　　（2）用一个非零数乘某一个方程；<br clear="none"/>
+　　（3）把一个方程的倍数加到另一个方程上去，使原先线性方程组变成一个阶梯形方程组，而且它们是同解的。<br clear="none"/>
+　　现在，对于n元非齐次线性方程组<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>，它与其增广矩阵<img align="absmiddle" height="25" src="images/02/image344.gif" width="67"/>是一一对应的，即增广矩阵的每一行就代表了线性方程组中每一个方程，那么消元法对线性方程组的三种变换，巧好就是在增广矩阵上所做的三种初等行变换，而化成的阶梯形方程组就对应一个阶梯形矩阵。因而从现在开始，我们讲到线性方程组的消元法，就是指对线性方程组的增广矩阵施行有限次初等行变换化成阶梯形矩阵，或简化阶梯形矩阵，从而可写出相应的阶梯形方程组，然后求出方程组的解。<br clear="none"/>
+
+　　<span class="bold">注意：</span>绝不能做初等列变换。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>解线性方程组<img align="absmiddle" height="75" src="images/02/image345.gif" width="132"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>用矩阵的初等行变换化方程组的增广矩阵为简化阶梯形矩阵。<br clear="none"/>
+　　　　<img align="absmiddle" height="75" src="images/02/image346.gif" width="275"/>
+<img align="absmiddle" height="75" src="images/02/image347.gif" width="100"/>
+<br clear="none"/>
+<span class="bold">　　</span>由最后简化阶梯形矩阵，与之相应的方程组与原方程组同解，它就是<img align="absmiddle" height="75" src="images/02/image348.gif" width="59"/>即为原方程组的唯一解。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例2：</span>解线性方程组<img align="absmiddle" height="75" src="images/02/image349.gif" width="148"/>。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="75" src="images/02/image350.gif" width="291"/>，则原方程组与阶梯形方程组<img align="absmiddle" height="75" src="images/02/image351.gif" width="135"/> 同解。<br clear="none"/>
+<span class="bold">　　</span>但这个方程组最后一个方程为“<img align="absmiddle" height="19" src="images/02/image352.gif" width="36"/>”，无论<img align="absmiddle" height="24" src="images/02/image353.gif" width="75"/>取何值都不能满足这个方程，因此阶梯形方程组无解，所以原所给线性方程组也无解。<br clear="none"/>
+　　由本例<span class="bold">说明</span>：若在消元过程中，出现“0=非零数”这样的方程（称为矛盾方程），方程组就无解；不出现矛盾方程，方程组必有解。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　我们把这两种情况与矩阵的秩联系起来，对例2不难看出<img align="absmiddle" height="25" src="images/02/image354.gif" width="57"/>，但<img align="absmiddle" height="21" src="images/02/image333.gif" width="59"/>，而在例1中，<img align="absmiddle" height="25" src="images/02/image355.gif" width="80"/>，因而，我们看到，消元过程中，会不会出现矛盾方程，或者说方程组无解还是有解，就取决于增广矩阵的秩与系数矩阵的秩是不相等还是相等。<br clear="none"/>
+
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<span class="bold">定理7.1（线性方程组有解判别定理）</span>
+<br clear="none"/>
+　　线性方程组<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>有解<img align="absmiddle" height="21" src="images/02/image356.gif" width="113"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例3：</span>解线性方程组<img align="absmiddle" height="75" src="images/02/image357.gif" width="121"/>。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="75" src="images/02/image358.gif" width="284"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>可见<img align="absmiddle" height="25" src="images/02/image359.gif" width="104"/>，线性方程组有解。<br clear="none"/>
+<span class="bold">　　　　</span>与原方程组同解方程组为<img align="absmiddle" height="75" src="images/02/image360.gif" width="101"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>第三个方程“0=0”，对任意<img align="absmiddle" height="24" src="images/02/image361.gif" width="55"/>均满足，称为多余方程可舍去。<br clear="none"/>
+<span class="bold">　　　　</span>即有<img align="absmiddle" height="51" src="images/02/image362.gif" width="108"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>或<img align="absmiddle" height="51" src="images/02/image363.gif" width="87"/>………（1）<br clear="none"/>
+<span class="bold">　　　　</span>当给<img align="absmiddle" height="24" src="images/02/image364.gif" width="17"/>以任意取一个数，代入上面等式，就可得出方程组的一个解，说明方程组有无穷多解，称<img align="absmiddle" height="24" src="images/02/image364.gif" width="17"/>为<span class="bold">自由未知量</span>，<img align="absmiddle" height="24" src="images/02/image365.gif" width="36"/>为<span class="bold">约束未知量</span>，把表达式（1）称为方程组的一般解，它给出约束未知量由自由未知量表示的方式。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_5" id="part1_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　例1与例3均是方程组有解的例题，但例1是唯一解，例3是有无穷多解，这又与什么有关？例1与例3均为3元非齐次线性方程组，即n=3，而例1
+<img align="absmiddle" height="25" src="images/02/image366.gif" width="127"/>，不出现自由未知量，故为唯一解，而对例3<img align="absmiddle" height="25" src="images/02/image367.gif" width="128"/>，在阶梯形方程组中，有效方程的个数为2，只能产生两个约束未知量，必产生<img align="absmiddle" height="19" src="images/02/image368.gif" width="100"/>个自由未知量，于是方程组有无穷多解，总之，有以下定理：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理7.2：</span>当n元非齐次线性方程组<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>有解时，即<img align="absmiddle" height="25" src="images/02/image369.gif" width="103"/>时，<br clear="none"/>
+（1）方程组<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>有唯一解<img align="absmiddle" height="16" src="images/02/image370.gif" width="57"/>；<br clear="none"/>
+（2）方程组<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>有无穷多解<img align="absmiddle" height="16" src="images/02/image371.gif" width="57"/>，此时在一般解中出现<img align="absmiddle" height="15" src="images/02/image372.gif" width="35"/>个自由未知量。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　推论1：</span>当A是n阶方阵时，n元线性方程组<img align="absmiddle" height="19" src="images/02/image079.gif" width="52"/>有唯一解<img align="absmiddle" height="27" src="images/02/image373.gif" width="65"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　对n元齐次线性方程组<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>，由于<img align="absmiddle" height="25" src="images/02/image374.gif" width="67"/>，必有<img align="absmiddle" height="25" src="images/02/image355.gif" width="80"/>，再一次说明齐次线性方程组必有解，由定理7.2可得：</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_6" id="part1_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理7.3：</span>设<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>为n元齐次线性方程组，那末：<br clear="none"/>
+　　（1）<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>仅有零解<img align="absmiddle" height="21" src="images/02/image375.gif" width="79"/>
+<br clear="none"/>
+　　（2）<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>有非零解<img align="absmiddle" height="21" src="images/02/image376.gif" width="103"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　推论2：</span>设A为n阶方阵，则n元齐次线性方程组<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>有非零解<img align="absmiddle" height="27" src="images/02/image377.gif" width="65"/>
+<br clear="none"/>
+<span class="bold">　　推论3：</span>设A为<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵，又<img align="absmiddle" height="15" src="images/02/image378.gif" width="41"/>，则n元齐次线性方程组<img align="absmiddle" height="19" src="images/02/image080.gif" width="52"/>必有非零解。<br clear="none"/>
+　　即方程个数小于未知量个数的齐次线性方程组必有非零解。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_7" id="part1_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例4：</span>解线性方程组<img align="absmiddle" height="75" src="images/02/image379.gif" width="171"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>系数矩阵<img align="absmiddle" height="75" src="images/02/image380.gif" width="228"/>，<img align="absmiddle" height="21" src="images/02/image381.gif" width="107"/>，所以方程组有非零解。<br clear="none"/>
+<span class="bold">　　　</span>　由简化阶梯形矩阵，可得方程组一般解为：<img align="absmiddle" height="51" src="images/02/image382.gif" width="101"/>，<img align="absmiddle" height="24" src="images/02/image383.gif" width="37"/>为自由未知量。<br clear="none"/>
+　　<span class="bold">说明：</span>当方程组有解时，把增广矩阵（或系数矩阵）利用初等行变换化为简化阶梯形矩阵很有必要，因为可以据此直接写出方程组的或唯一解或一般解。<span class="bold">写一般解的方法</span>是：把主元相对应的未知量取为约束未知量，其余<img align="absmiddle" height="15" src="images/02/image372.gif" width="35"/>个为自由未知量，移到等号右边，就能方便地写出方程组的一般解。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+

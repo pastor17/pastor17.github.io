@@ -1,0 +1,5 @@
+  - <a href="/openvidu.io-docs/#/home/index" target="_blank">OpenVidu中文手册</a>
+  - <a href="/PumpkinBook-docs/#/" target="_blank">统计学公式详细推导手册</a>
+  - <a href="/further-mathematics-docs/#/" target="_blank">高等数学(上)</a> <!-- 转载 http://www2.edu-edu.com.cn/lesson_crs78/self/j_0022/soft/Norm_index.php -->
+  - <a href="/Linear-algebra-docs/#/" target="_blank">线性代数</a> <!-- 转载 http://www2.edu-edu.com.cn/lesson_crs78/self/j_4184/soft/ch0101.html -->
+  - <a href="/deepLearning-500-questions/#/" target="_blank">深度学习500问答知识</a> <!-- 转载 https://github.com/scutan90/DeepLearning-500-questions -->

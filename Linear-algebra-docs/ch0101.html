@@ -1,0 +1,306 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§1.1 行列式的定义</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>1.1 行列式的定义</center></h2>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>前言</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　行列式这部分内容在线性代数里是一个基本内容，也是一个很重要的内容，这部分内容与后面的线性方程组、矩阵、向量组的线性相关、线性无关都有重要联系，他们都要通过行列式来讨论。那么什么叫行列式呢？</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>一、二阶行列式与三阶行列式</h2>
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　设有4个数<img align="absmiddle" height="25" src="images/0101/clip_image002.gif" width="84"/>，引入记号<img align="absmiddle" height="53" src="images/0101/clip_image004.gif" width="161"/>，称为<strong>二阶行列式</strong>，把数<img align="absmiddle" height="25" src="images/0101/clip_image006.gif" width="19"/>称为<strong>行列式中</strong>
+<strong>
+<img align="absmiddle" height="21" src="images/0101/clip_image008.gif" width="35"/>
+</strong>
+<strong>元素</strong>。<br clear="none"/>
+　　因而，所谓一个二阶行列式，就是指由4个数排成两个行，两个列后的一个式子，其实质表示对这些数按一定法则进行运算，即二阶行列式等于它的左上角到右下角两个元素的乘积减去右上角到左下角两个元素的乘积，最后结果为一个数，称该数为二阶行列式的值。<br clear="none"/>
+
+　　例如<strong>
+<img align="absmiddle" height="48" src="images/0101/clip_image010.gif" width="177"/>
+</strong>　　</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　利用二阶行列式，我们有求解二元线性方程组的一个方法，即有下面定理。　<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定理1.1：</strong>设有二元线性方程组
+<center>
+<img align="absmiddle" height="51" src="images/0101/clip_image012.gif" width="119"/>　　　　（1.1）</center>
+　　如果方程组<img align="absmiddle" height="21" src="images/0101/clip_image014.gif" width="32"/>的系数行列式<img align="absmiddle" height="53" src="images/0101/clip_image016.gif" width="107"/>，则方程组有唯一解<img align="absmiddle" height="41" src="images/0101/clip_image018.gif" width="52"/>，<img align="absmiddle" height="41" src="images/0101/clip_image020.gif" width="56"/>。<br clear="none"/>
+　　其中<img align="absmiddle" height="53" src="images/0101/clip_image022.gif" width="167"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<strong>　　例1：</strong>求解方程组<img align="absmiddle" height="51" src="images/0101/clip_image024.gif" width="91"/>
+<br clear="none"/>
+<strong>　　解：</strong>方程组的系数行列式为<img align="absmiddle" height="48" src="images/0101/clip_image026.gif" width="235"/>
+<br clear="none"/>
+　　　　 故方程组有唯一解<br clear="none"/>
+　　　　 又<img align="absmiddle" height="48" src="images/0101/clip_image028.gif" width="213"/>
+<br clear="none"/>
+　　　　　 <img align="absmiddle" height="48" src="images/0101/clip_image030.gif" width="181"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　 则方程组的唯一解为<img align="absmiddle" height="88" src="images/0101/clip_image032.gif" width="119"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　由二阶行列式的定义，可以想到三阶行列式应是指由9个数<img align="absmiddle" height="25" src="images/0101/clip_image034.gif" width="97"/>排成三个行，三个列后组成的一个式子，即
+<center>
+<img align="absmiddle" height="80" src="images/0101/clip_image036.gif" width="116"/>
+</center>
+　　那么问题在于，它的值如何确定？<br clear="none"/>
+　　想法：由二阶行列式给出三阶行列式的定义，引入余子式与代数余子式的概念。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>若把三阶行列式D中元素<img align="absmiddle" height="25" src="images/0101/clip_image006_0000.gif" width="19"/>所在的第i行与第j列划去，剩余的元素按原来的相对位置组成一个二阶行列式，称为元素<img align="absmiddle" height="25" src="images/0101/clip_image006_0001.gif" width="19"/>的<strong>余子式</strong>，称为<strong>
+<img align="absmiddle" height="25" src="images/0101/clip_image038.gif" width="25"/>
+</strong>。<br clear="none"/>
+　　令<img align="absmiddle" height="27" src="images/0101/clip_image040.gif" width="101"/>称<img align="absmiddle" height="25" src="images/0101/clip_image042.gif" width="20"/>为元素<img align="absmiddle" height="25" src="images/0101/clip_image006_0002.gif" width="19"/>的<strong>代数余子式</strong>
+<img align="absmiddle" height="21" src="images/0101/clip_image044.gif" width="81"/>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　 　　例如<img align="absmiddle" height="51" src="images/0101/clip_image046.gif" width="99"/>，<img align="absmiddle" height="51" src="images/0101/clip_image048.gif" width="99"/>，<img align="absmiddle" height="51" src="images/0101/clip_image050.gif" width="99"/>
+<br clear="none"/>
+　　 <img align="absmiddle" height="25" src="images/0101/clip_image052.gif" width="144"/>，<img align="absmiddle" height="25" src="images/0101/clip_image054.gif" width="159"/>，<img align="absmiddle" height="25" src="images/0101/clip_image056.gif" width="148"/>
+<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<strong>　　定义：</strong>三阶行列式<img align="absmiddle" height="80" src="images/0101/clip_image058.gif" width="268"/>
+<br clear="none"/>
+　　称上式为三阶行列式<strong>D</strong>
+<strong>按第一列的展开式</strong>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　 例如<img align="absmiddle" height="75" src="images/0101/clip_image060.gif" width="443"/><br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="21" src="images/0101/clip_image062.gif" width="157"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<strong>　　例2：</strong>当x取何值时，<img align="absmiddle" height="75" src="images/0101/clip_image064.gif" width="113"/>
+<br clear="none"/>
+　　<span class="bold">解：</span>由<img align="absmiddle" height="75" src="images/0101/010101.gif" width="320"/>
+<br clear="none"/>
+　　　 　　　　　　　　<img align="absmiddle" height="21" src="images/0101/clip_image068.gif" width="164"/>
+<br clear="none"/>
+　　　 　　　　　　　　<img align="absmiddle" height="24" src="images/0101/clip_image070.gif" width="171"/>
+<br clear="none"/>
+　　　　 　　　　　　　得<img align="absmiddle" height="19" src="images/0101/clip_image072.gif" width="60"/>
+<br clear="none"/>
+　　　　 　　　　　　　即当<img align="absmiddle" height="19" src="images/0101/clip_image072_0000.gif" width="60"/>时，行列式的值大于零。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_1" id="part3_1">
+<h2>二、n阶行列式</h2>
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　上面由二阶行列式，递推出三阶行列式，因而可以想到可以由三阶行列式定义四阶行列式，…，由<img align="absmiddle" height="19" src="images/0101/clip_image074.gif" width="32"/>阶行列式定义n阶行列式。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>设有<img align="absmiddle" height="21" src="images/0101/clip_image076.gif" width="19"/>个数<img align="absmiddle" height="25" src="images/0101/clip_image078.gif" width="120"/>,记<img align="absmiddle" height="101" src="images/0101/clip_image080.gif" width="124"/>，称为<strong>n</strong>
+<strong>阶行列式</strong>，简记为<img align="absmiddle" height="31" src="images/0101/clip_image082.gif" width="59"/>。<br clear="none"/>
+　　类似定义D中元素<img align="absmiddle" height="25" src="images/0101/clip_image006_0003.gif" width="19"/>的余子式<img align="absmiddle" height="25" src="images/0101/clip_image038_0000.gif" width="25"/>及代数余子式<img align="absmiddle" height="25" src="images/0101/clip_image042_0000.gif" width="20"/>，显然<img align="absmiddle" height="25" src="images/0101/clip_image038_0001.gif" width="25"/>为<img align="absmiddle" height="19" src="images/0101/clip_image074_0000.gif" width="32"/>阶行列式。则规定<img align="absmiddle" height="24" src="images/0101/clip_image085.gif" width="199"/>，称上式为<strong>n阶行列式按第一列的展开式</strong>。<br clear="none"/>
+　　又规定一阶行列式<img align="absmiddle" height="27" src="images/0101/clip_image087.gif" width="88"/>
+<br clear="none"/>
+<strong>　　注意：</strong>这记号不是指<img align="absmiddle" height="24" src="images/0101/clip_image089.gif" width="21"/>的绝对值，因而任何一个数都可以看成一个一阶行列式。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" style="display:" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<strong>　　例3：</strong>证明n阶上三角行列式<img align="absmiddle" height="99" src="images/0101/clip_image091.gif" width="209"/>
+<br clear="none"/>
+　　我们把行列式记号中从左上角到右下角这一条对角线称为<strong>主对角线</strong>，上三角行列式的特征即为主对角线左下方的元素全为零。<br clear="none"/>
+
+<strong>　　证</strong>：可以对行列式的阶数n用数学归纳法，显然一阶行列式<img align="absmiddle" height="27" src="images/0101/clip_image093.gif" width="83"/>
+<br clear="none"/>
+　　　　 其次假设<img align="absmiddle" height="19" src="images/0101/clip_image074_0001.gif" width="32"/>阶上三角行列式<img align="absmiddle" height="99" src="images/0101/clip_image096.gif" width="160"/>
+<br clear="none"/>
+　　　　 则将n阶上三角行列式按第一列展开，由上三角特点，即可得到<br clear="none"/>
+　　
+<center>　<img align="absmiddle" height="99" src="images/0101/010102.gif" width="249"/>
+<img align="absmiddle" height="24" src="images/0101/clip_image100.gif" width="75"/>
+</center>
+　　本例说明，上三角行列式的值等于主对角线上元素的乘积。证毕。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+

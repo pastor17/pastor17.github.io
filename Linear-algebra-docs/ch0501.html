@@ -1,0 +1,357 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§5.1 特征值与特征向量</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>5.1 特征值与特征向量</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、特征值与特征向量</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_05_01" class="part1_2">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.1：</span>设A为n阶实方阵，如果存在某个数<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>及某个n维非零列向量<img align="absmiddle" height="17" src="images/05/image002.gif" width="13"/>，使得<img align="absmiddle" height="24" src="images/05/image003.gif" width="63"/>，则称<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>是方阵A的一个特征值，<img align="absmiddle" height="17" src="images/05/image002.gif" width="13"/>是方阵A的属于特征值<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>的一个特征向量。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<br clear="none"/>
+　　<span class="bold">注：</span>①定义说明特征值与特征向量是紧密相连的概念，对每个特征值必有属于它的特征向量，且有无穷多个；而对每个特征向量必属于某个特征值，且只属于一个特征值。<br clear="none"/>
+
+<span class="bold">　　　　</span>②特征向量必须是非零向量，且必是列向量。<br clear="none"/>
+<span class="bold">　　　　</span>③若<img align="absmiddle" height="24" src="images/05/image004.gif" width="37"/>均为A的属于<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>的特征向量，则对任何不全为零的数<img align="absmiddle" height="24" src="images/05/image005.gif" width="132"/>也是A的属于<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>的特征向量。<br clear="none"/>
+　　因<img align="absmiddle" height="24" src="images/05/image006.gif" width="303"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.2：</span>设A为n阶实方阵，<img align="absmiddle" height="19" src="images/05/image007.gif" width="15"/>为一个参数，称n阶方阵<img align="absmiddle" height="19" src="images/05/image008.gif" width="51"/>为A的特征方阵，它的行列式<img align="absmiddle" height="27" src="images/05/image009.gif" width="56"/>称为A的特征多项式，把<img align="absmiddle" height="27" src="images/05/image010.gif" width="80"/>称为A的特征方程，把特征方程或特征多项式的根称为A的特征根。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　我们看一下A的特征多项式：<br clear="none"/>
+　　设<img align="absmiddle" height="25" src="images/05/image011.gif" width="57"/>为n阶实方阵时，其特征多项式为<img align="absmiddle" height="99" src="images/05/image012.gif" width="232"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="25" src="images/05/image013.gif" width="285"/>
+<br clear="none"/>
+　　由行列式计算可知，行列式<img align="absmiddle" height="27" src="images/05/image009.gif" width="56"/>的值确是<img align="absmiddle" height="19" src="images/05/image007.gif" width="15"/>的n次多项式。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　下面我们从定义出发来推导求特征值、特征向量的方法：<br clear="none"/>
+　　<img align="absmiddle" height="24" src="images/05/image014.gif" width="260"/>
+<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>列向量<img align="absmiddle" height="17" src="images/05/image002.gif" width="13"/>为齐次线性方程组<img align="absmiddle" height="24" src="images/05/image016.gif" width="103"/>的非零解<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>
+<img align="absmiddle" height="27" src="images/05/image017.gif" width="84"/>，<img align="absmiddle" height="17" src="images/05/image002.gif" width="13"/>为方程组<img align="absmiddle" height="24" src="images/05/image016.gif" width="103"/>的非零解<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>
+<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>为A的特征根，<img align="absmiddle" height="17" src="images/05/image002.gif" width="13"/>为方程组<img align="absmiddle" height="24" src="images/05/image016.gif" width="103"/>的非零解，则求n阶方阵A的特征值与特征向量的<span class="bold">步骤</span>如下：<br clear="none"/>
+　　1、写出并计算A的特征多项式<img align="absmiddle" height="27" src="images/05/image009.gif" width="56"/>；<br clear="none"/>
+　　2、求特征方程<img align="absmiddle" height="27" src="images/05/image010.gif" width="80"/>的所有根，共有n个根（其中可能有复根，也可能有重根），这些根<img align="absmiddle" height="24" src="images/05/image018.gif" width="79"/>即为A的全部特征值；<br clear="none"/>
+　　3、对于A的每一个特征值<img align="absmiddle" height="24" src="images/05/image019.gif" width="79"/>，求解齐次线性方程组<img align="absmiddle" height="24" src="images/05/image020.gif" width="101"/>，则方程组的每一个非零解都是A的属于特征值<img align="absmiddle" height="24" src="images/05/image021.gif" width="16"/>的特征向量（说明有无穷多个），特别方程组<img align="absmiddle" height="24" src="images/05/image020.gif" width="101"/>的一个基础解系<img align="absmiddle" height="25" src="images/05/image022.gif" width="85"/>就是方阵A的属于<img align="absmiddle" height="24" src="images/05/image021.gif" width="16"/>的个数达最大的线性无关的特征向量，而且A的属于<img align="absmiddle" height="24" src="images/05/image021.gif" width="16"/>的全部特征向量为<img align="absmiddle" height="25" src="images/05/image023.gif" width="147"/>，其中<img align="absmiddle" height="24" src="images/05/image024.gif" width="77"/>是不全为零的任意常数。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_5" id="part1_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>设<img align="absmiddle" height="48" src="images/05/image025.gif" width="71"/>，求A的所有的特征值和特征向量。<br clear="none"/>
+<span class="bold">　　解：</span>A的特征多项式<img align="absmiddle" height="48" src="images/05/image026.gif" width="212"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则A的两个特征值为<img align="absmiddle" height="24" src="images/05/image027.gif" width="88"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>对<img align="absmiddle" height="24" src="images/05/image028.gif" width="41"/>，求解齐次方程组<img align="absmiddle" height="21" src="images/05/image029.gif" width="100"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="48" src="images/05/image030.gif" width="192"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>由此可求出方程组一个基础解系为<img align="absmiddle" height="48" src="images/05/image031.gif" width="67"/>，则A的属于<img align="absmiddle" height="24" src="images/05/image028.gif" width="41"/>的全部特征向量为<img align="absmiddle" height="24" src="images/05/image032.gif" width="85"/>，对<img align="absmiddle" height="24" src="images/05/image033.gif" width="43"/>，求解齐次方程组<img align="absmiddle" height="21" src="images/05/image034.gif" width="97"/>。<br clear="none"/>
+　　　　<img align="absmiddle" height="48" src="images/05/image035.gif" width="189"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>由此可求出方程组的一个基础解系为<img align="absmiddle" height="48" src="images/05/image036.gif" width="59"/>，则A的属于<img align="absmiddle" height="24" src="images/05/image033.gif" width="43"/>的所有特征向量为<img align="absmiddle" height="24" src="images/05/image037.gif" width="85"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_6" id="part1_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>求<img align="absmiddle" height="75" src="images/05/image038.gif" width="89"/>的特征值和线性无关的特征向量。<br clear="none"/>
+<span class="bold">　　解：</span>A的特征多项式<img align="absmiddle" height="75" src="images/05/image039.gif" width="355"/>
+<br clear="none"/>
+　 　　　　　　　　　 <img align="absmiddle" height="75" src="images/05/image040.gif" width="312"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>因此A的特征值为<img align="absmiddle" height="24" src="images/05/image041.gif" width="127"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>对<img align="absmiddle" height="19" src="images/05/image042.gif" width="39"/>（二重根），求解<img align="absmiddle" height="21" src="images/05/image043.gif" width="97"/>，<img align="absmiddle" height="75" src="images/05/image044.gif" width="237"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>于是方程组的一般解为<img align="absmiddle" height="75" src="images/05/image045.gif" width="109"/>，得一个基础解系为<img align="absmiddle" height="75" src="images/05/image046.gif" width="139"/>，即为A的属于<img align="absmiddle" height="19" src="images/05/image042.gif" width="39"/>的线性无关的特征向量。<br clear="none"/>
+<span class="bold">　　　　</span>对<img align="absmiddle" height="19" src="images/05/image047.gif" width="44"/>（单根），求解<img align="absmiddle" height="21" src="images/05/image048.gif" width="103"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="75" src="images/05/image049.gif" width="243"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>于是方程组的一般解为<img align="absmiddle" height="75" src="images/05/image050.gif" width="65"/>，得一个基础解系为<img align="absmiddle" height="75" src="images/05/image051.gif" width="59"/>，即为A的属于<img align="absmiddle" height="19" src="images/05/image047.gif" width="44"/>的线性无关的特征向量。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_7" id="part1_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例3：</span>证明：三角矩阵的特征值就是它的全体对角元。<br clear="none"/>
+<span class="bold">　　证：</span>不妨设A为n阶上三角矩阵<img align="absmiddle" height="99" src="images/05/image052.gif" width="115"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则A的特征多项式为<img align="absmiddle" height="99" src="images/05/image053.gif" width="307"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>它的n个根就是A的n个对角元，即为A的n个特征值。<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_8" id="part1_8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+　　对于抽象的矩阵A，或由定义，或由求特征值的方法可以求出A的特征值和特征向量。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例4：</span>设已知<img align="absmiddle" height="24" src="images/05/image054.gif" width="107"/>，证明：<br clear="none"/>
+<span class="bold">　　　　</span>（1）<img align="absmiddle" height="25" src="images/05/image055.gif" width="75"/>，<img align="absmiddle" height="19" src="images/05/image056.gif" width="13"/>为任意自然数；<br clear="none"/>
+<span class="bold">　　　　</span>（2）<img align="absmiddle" height="24" src="images/05/image057.gif" width="101"/>，<img align="absmiddle" height="19" src="images/05/image056.gif" width="13"/>为任意数；<br clear="none"/>
+<span class="bold">　　　　</span>（3）设<img align="absmiddle" height="21" src="images/05/image058.gif" width="36"/>为任意<img align="absmiddle" height="15" src="images/05/image059.gif" width="13"/>的多项式，<img align="absmiddle" height="24" src="images/05/image060.gif" width="109"/>
+<br clear="none"/>
+<span class="bold">　　证：</span>（1）用归纳法，当<img align="absmiddle" height="19" src="images/05/image061.gif" width="35"/>，即<img align="absmiddle" height="24" src="images/05/image003.gif" width="63"/>，假设<img align="absmiddle" height="25" src="images/05/image055.gif" width="75"/>，则有<img align="absmiddle" height="25" src="images/05/image062.gif" width="291"/>
+<br clear="none"/>
+　　　　　于是对于任何自然数<img align="absmiddle" height="19" src="images/05/image056.gif" width="13"/>，<img align="absmiddle" height="25" src="images/05/image055.gif" width="75"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>（2）由<img align="absmiddle" height="24" src="images/05/image003.gif" width="63"/>，两边与数<img align="absmiddle" height="19" src="images/05/image056.gif" width="13"/>作数乘，即得<img align="absmiddle" height="24" src="images/05/image057.gif" width="101"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>（3）设<img align="absmiddle" height="25" src="images/05/image063.gif" width="239"/>
+<br clear="none"/>
+<span class="bold">　　　　　　</span>于是<img align="absmiddle" height="25" src="images/05/image064.gif" width="260"/>
+<br clear="none"/>
+<span class="bold">　　　　　　</span>则有<img align="absmiddle" height="25" src="images/05/image065.gif" width="289"/>
+<br clear="none"/>
+　　　　　　　　　　　　<img align="absmiddle" height="25" src="images/05/image066.gif" width="271"/>
+<br clear="none"/>
+　　　　　　　　　　　　<img align="absmiddle" height="25" src="images/05/image067.gif" width="241"/>
+<br clear="none"/>
+　　　　　　　　　　　　<img align="absmiddle" height="24" src="images/05/image068.gif" width="64"/>
+<br clear="none"/>
+　　<span class="bold">说明：</span>本例的结论很重要，希望能记住，特别是（3）给出了求多项式方阵的特征值的一个简便计算方法。只要<img align="absmiddle" height="24" src="images/05/image001.gif" width="19"/>是A的特征值，那么<img align="absmiddle" height="24" src="images/05/image069.gif" width="43"/>一定是<img align="absmiddle" height="21" src="images/05/image070.gif" width="39"/>的特征值，而且特征向量不变。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_9" id="part1_9">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例5：</span>设<img align="absmiddle" height="48" src="images/05/image071.gif" width="69"/>，求<img align="absmiddle" height="21" src="images/05/image072.gif" width="115"/>的所有特征值。<br clear="none"/>
+<span class="bold">　　解：</span>由A是二阶上三角矩阵，其两个特征值为对角元1和3，而<img align="absmiddle" height="24" src="images/05/image073.gif" width="164"/>，这里<img align="absmiddle" height="24" src="images/05/image074.gif" width="119"/>。<br clear="none"/>
+所以B的两个特征值就是<img align="absmiddle" height="21" src="images/05/image075.gif" width="116"/>。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_10" id="part1_10">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例6：</span>求出以下特殊的n阶方阵A的所有可能的特征值（m为某个正整数）：<br clear="none"/>
+<span class="bold">　　　　</span>（1）<img align="absmiddle" height="21" src="images/05/image076.gif" width="48"/>（称A为幂零矩阵）<br clear="none"/>
+<span class="bold">　　　　</span>（2）<img align="absmiddle" height="25" src="images/05/image077.gif" width="53"/>（称A为对合矩阵）<br clear="none"/>
+<span class="bold">　　解：</span>设<img align="absmiddle" height="24" src="images/05/image078.gif" width="105"/>，则<img align="absmiddle" height="25" src="images/05/image079.gif" width="79"/>
+<br clear="none"/>
+　　　　（1）由<img align="absmiddle" height="24" src="images/05/image080.gif" width="132"/>，而<img align="absmiddle" height="21" src="images/05/image081.gif" width="37"/>，则<img align="absmiddle" height="19" src="images/05/image082.gif" width="39"/>，<br clear="none"/>
+　　　　（2）由<img align="absmiddle" height="24" src="images/05/image083.gif" width="132"/>，而<img align="absmiddle" height="21" src="images/05/image081.gif" width="37"/>，则<img align="absmiddle" height="21" src="images/05/image084.gif" width="43"/>，即<img align="absmiddle" height="19" src="images/05/image085.gif" width="47"/>
+<br clear="none"/>
+　　<span class="bold">注：</span>本例说明幂零矩阵的特征值必为0，对合矩阵的特征值必为<img align="absmiddle" height="17" src="images/05/image086.gif" width="20"/>。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_11" id="part1_11">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例7：</span>若方阵A满足<img align="absmiddle" height="27" src="images/05/image087.gif" width="84"/>，问A有哪个数为它的一个特征值？若<img align="absmiddle" height="27" src="images/05/image088.gif" width="76"/>，又A有哪个数为一个特征值？<br clear="none"/>
+<span class="bold">　　解：</span>当<img align="absmiddle" height="27" src="images/05/image087.gif" width="84"/>，说明2为特征方程<img align="absmiddle" height="27" src="images/05/image010.gif" width="80"/>的一个根，即2为A的一个特征值。<br clear="none"/>
+<span class="bold">　　　　</span>当<img align="absmiddle" height="27" src="images/05/image088.gif" width="76"/>时，因<img align="absmiddle" height="27" src="images/05/image089.gif" width="183"/>，所以-1是A的一个特征值。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、关于特征值和特征向量的若干结论</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　命题1：</span>实方阵的特征值未必是实数，特征向量也未必是实向量。<br clear="none"/>
+<span class="bold">　　例8：</span>求<img align="absmiddle" height="48" src="images/05/image090.gif" width="77"/>的特征值和特征向量。<br clear="none"/>
+<span class="bold">　　解：</span>由A的特征多项式<img align="absmiddle" height="48" src="images/05/image091.gif" width="161"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>则A的两个特征值为<img align="absmiddle" height="24" src="images/05/image092.gif" width="92"/>，并计算得到A的属于<img align="absmiddle" height="24" src="images/05/image093.gif" width="39"/>的特征向量为<img align="absmiddle" height="48" src="images/05/image094.gif" width="55"/>A的属于特征值<img align="absmiddle" height="24" src="images/05/image095.gif" width="49"/>的特征向量为<img align="absmiddle" height="48" src="images/05/image096.gif" width="65"/>。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　命题2：</span>一个向量<img align="absmiddle" height="17" src="images/05/image002.gif" width="13"/>不可能是属于同一个方阵A的不同特征值的特征向量。<br clear="none"/>
+<span class="bold">　　证：</span>设有<img align="absmiddle" height="24" src="images/05/image097.gif" width="128"/>，则<img align="absmiddle" height="24" src="images/05/image098.gif" width="91"/>，因<img align="absmiddle" height="21" src="images/05/image081.gif" width="37"/>，所以必有<img align="absmiddle" height="24" src="images/05/image099.gif" width="47"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　命题3：</span>n阶方阵A和它的转置矩阵<img align="absmiddle" height="20" src="images/05/image100.gif" width="23"/>必有相同的特征值。<br clear="none"/>
+<span class="bold">　　证：</span>由<img align="absmiddle" height="29" src="images/05/image101.gif" width="216"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>说明A与<img align="absmiddle" height="20" src="images/05/image100.gif" width="23"/>有相同的特征多项式，也就有相同的特征值。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　命题4：</span>设<img align="absmiddle" height="24" src="images/05/image018.gif" width="79"/>是n阶方阵<img align="absmiddle" height="25" src="images/05/image011.gif" width="57"/>的全体n个特征值，则必有<img align="absmiddle" height="45" src="images/05/image102.gif" width="135"/>；<img align="absmiddle" height="45" src="images/05/image103.gif" width="71"/>，这里<img align="absmiddle" height="24" src="images/05/image104.gif" width="37"/>为A中n个对角元之和，称为方阵A的逆。<br clear="none"/>
+<span class="bold">　　证：</span>我们仅以二阶方阵对本命题说明：设<img align="absmiddle" height="51" src="images/05/image105.gif" width="95"/>，则A的特征方程为<img align="absmiddle" height="51" src="images/05/image106.gif" width="420"/>，又因<img align="absmiddle" height="24" src="images/05/image107.gif" width="37"/>为A的两个特征值，即为特征方程的根。<br clear="none"/>
+<span class="bold">　　　　</span>也就有<img align="absmiddle" height="27" src="images/05/image108.gif" width="169"/>
+<img align="absmiddle" height="25" src="images/05/image109.gif" width="176"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>比较两个方程的系数，即得<br clear="none"/>
+　　　　<img align="absmiddle" height="51" src="images/05/image110.gif" width="164"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　我们再以例2为例，三阶方阵A的三个特征值是<img align="absmiddle" height="21" src="images/05/image111.gif" width="45"/>，而A的对角元为<img align="absmiddle" height="21" src="images/05/image112.gif" width="39"/>，它们的和都是15，而<img align="absmiddle" height="27" src="images/05/image113.gif" width="53"/>，与<img align="absmiddle" height="24" src="images/05/image114.gif" width="43"/>也相同。<br clear="none"/>
+<span class="bold">　　例9：</span>已知三阶方阵A的特征值为<img align="absmiddle" height="21" src="images/05/image115.gif" width="43"/>，求行列式<img align="absmiddle" height="29" src="images/05/image116.gif" width="93"/>的值。<br clear="none"/>
+<span class="bold">　　解：</span>记<img align="absmiddle" height="24" src="images/05/image117.gif" width="137"/>，则<img align="absmiddle" height="24" src="images/05/image074.gif" width="119"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>由A的特征值为<img align="absmiddle" height="21" src="images/05/image115.gif" width="43"/>，则<img align="absmiddle" height="21" src="images/05/image070.gif" width="39"/>的三个特征值为<img align="absmiddle" height="21" src="images/05/image118.gif" width="111"/>，即<img align="absmiddle" height="21" src="images/05/image119.gif" width="47"/>，所以<img align="absmiddle" height="29" src="images/05/image120.gif" width="196"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　命题5：</span>n阶矩阵A可逆<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>A的n个特征值都不为零，且特征值的倒数为<img align="absmiddle" height="20" src="images/05/image121.gif" width="25"/>的特征值。<br clear="none"/>
+<span class="bold">　　证：</span>A可逆<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>
+<img align="absmiddle" height="27" src="images/05/image122.gif" width="148"/>每个<img align="absmiddle" height="24" src="images/05/image123.gif" width="41"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>设<img align="absmiddle" height="21" src="images/05/image124.gif" width="60"/>，两边左乘<img align="absmiddle" height="20" src="images/05/image121.gif" width="25"/>，得<img align="absmiddle" height="24" src="images/05/image125.gif" width="137"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>因<img align="absmiddle" height="19" src="images/05/image126.gif" width="39"/>，所以<img align="absmiddle" height="41" src="images/05/image127.gif" width="75"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_05_01" class="popup-questions" knowid="know_j_05_01" syncpart="part1_2">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="b" score="100">
+<p class="label">(单选题) 21．设矩阵<img src="images/05/image455.gif" width="98" height="71" align="absmiddle">，则A的特征值为（　　　）</p>
+<ul class="options">
+         <li code="a">A.1,1,0</li>
+	 <li code="b">B.-1,1,1</li>
+	 <li code="c">C.1,1,1</li>
+	 <li code="d">D.1,-1,-1</li>
+</ul>
+<div class="answer">
+<p>【答案】B</p>
+<p>【解析】<img src="images/05/image456.gif" width="397" height="77" align="absmiddle">故A的特征值为<br>
+  -1,1,1。</p>
+<p>【知识点】特征值与特征向量</p>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+

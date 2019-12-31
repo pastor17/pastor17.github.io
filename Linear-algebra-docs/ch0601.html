@@ -1,0 +1,543 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§6.1 实二次型及其标准形</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>6.1 实二次型及其标准形</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、实二次型的定义</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　<br clear="none"/>
+　　先看一个实例：<br clear="none"/>
+<span class="bold">　　例1：</span>设有三维列向量<img align="absmiddle" height="25" src="images/06/image001.gif" width="104"/>及三阶实对称矩阵<img align="absmiddle" height="75" src="images/06/image002.gif" width="119"/>，计算<img align="absmiddle" height="20" src="images/06/image003.gif" width="49"/>。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="75" src="images/06/image004.gif" width="248"/>
+<img align="absmiddle" height="75" src="images/06/image005.gif" width="175"/>
+<br clear="none"/>
+<br clear="none"/>　　
+　　　　　　<img align="absmiddle" height="25" src="images/06/image006.gif" width="163"/>
+<br clear="none"/>
+　　结果是一个由未知量<img align="absmiddle" height="24" src="images/06/image007.gif" width="55"/>组成的二次齐次多项式（因为每一项都是二次式），记成<img align="absmiddle" height="24" src="images/06/image008.gif" width="79"/>，即<img align="absmiddle" height="25" src="images/06/image009.gif" width="139"/>
+<br clear="none"/>
+　　这样的三元二次齐次多项式，称为一个<span class="bold">三元实二次型</span>，引进更一般的n元实三次型的定义。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.1：</span>把含有n个未知量<img align="absmiddle" height="24" src="images/06/image010.gif" width="77"/>的实系数二次齐次多项式。<br clear="none"/>
+<img align="absmiddle" height="25" src="images/06/image011.gif" width="536"/>称为一个<span class="bold">n元实二次型（或n元二次型）</span>。<br clear="none"/>
+　　令<img align="absmiddle" height="25" src="images/06/image012.gif" width="157"/>，又<img align="absmiddle" height="99" src="images/06/image013.gif" width="64"/>，<img align="absmiddle" height="99" src="images/06/image014.gif" width="124"/>为n阶实对称矩阵。<br clear="none"/>
+则n元实二次型<img align="absmiddle" height="47" src="images/06/image015.gif" width="195"/>
+<img align="absmiddle" height="20" src="images/06/image016.gif" width="61"/>
+<br clear="none"/>
+<br clear="none"/>
+　　由矩阵A的对称性可知：A中的对角元<img align="absmiddle" height="24" src="images/06/image017.gif" width="19"/>恰是二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的平方项<img align="absmiddle" height="25" src="images/06/image019.gif" width="21"/>的系数，而A中其它位置的元素<img align="absmiddle" height="25" src="images/06/image020.gif" width="60"/>，恰是<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>中的交叉项<img align="absmiddle" height="25" src="images/06/image021.gif" width="29"/>的系数的一半，于是n元实二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>与n阶实对称矩阵A是一一对应的，即互相唯一确定，称<span class="bold">A为二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的矩阵</span>，称<span class="bold">
+<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>是以A为矩阵的二次型</span>，把A的秩也称为<span class="bold">二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的秩</span>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　由此可见，n元实二次型与n阶实对称矩阵之间有密切关系，于是可以用第五章中关于实对称矩阵的结论来讨论二次型。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>设二次型<img align="absmiddle" height="25" src="images/06/image022.gif" width="337"/>，写出<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的矩阵A。<br clear="none"/>
+<span class="bold">　　解：</span>由二次型各项系数直接写出对应的对称矩阵<img align="absmiddle" height="75" src="images/06/image023.gif" width="115"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　例3：</span>写出由对称矩阵<img align="absmiddle" height="96" src="images/06/image024.gif" width="127"/>，确定的二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>。<br clear="none"/>
+<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>由A为4阶对称矩阵，对应4元二次型为：
+<br clear="none"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="25" src="images/06/image026.gif" width="455"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、二次型的标准形</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　为了对二次型进行深入的研究，需引入<span class="bold">可逆线性变换</span>的概念。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义：</span>把两组未知量<img align="absmiddle" height="24" src="images/06/image010.gif" width="77"/>与<img align="absmiddle" height="24" src="images/06/image027.gif" width="80"/>之间的关系式<img align="absmiddle" height="99" src="images/06/image028.gif" width="195"/>，即<img align="absmiddle" height="99" src="images/06/image029.gif" width="169"/>，即<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>，其中<img align="absmiddle" height="25" src="images/06/image031.gif" width="72"/>
+<br clear="none"/>
+　　称为<span class="bold">由变量<img align="absmiddle" height="24" src="images/06/image010.gif" width="77"/>到变量<img align="absmiddle" height="24" src="images/06/image027.gif" width="80"/>的一个线性变换</span>，矩阵C称为该<span class="bold">线性变换的矩阵</span>。当C为可逆矩阵时，称<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>为<span class="bold">可逆线性变换</span>；当C为正交矩阵时，称<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>为<span class="bold">正交变换</span>，显然正交变换必是可逆线性变换。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　如果对二次型<img align="absmiddle" height="25" src="images/06/image032.gif" width="161"/>进行可逆线性变换<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>，则<br clear="none"/>
+　　<img align="absmiddle" height="59" src="images/06/image033.gif" width="233"/>
+<br clear="none"/>
+　　其中<img align="absmiddle" height="21" src="images/06/image034.gif" width="73"/>，B仍为对称矩阵，从而<img align="absmiddle" height="20" src="images/06/image035.gif" width="43"/>是以B为矩阵的二次型，又因为C可逆，则<img align="absmiddle" height="21" src="images/06/image036.gif" width="80"/>。<br clear="none"/>
+　　上述讨论<span class="bold">说明</span>：二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>经过可逆线性变换<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>，就得到以<img align="absmiddle" height="21" src="images/06/image034.gif" width="73"/>为矩阵的二次型，并且两个二次型的秩相等。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　先后这两个二次型的矩阵A与B的关系<img align="absmiddle" height="21" src="images/06/image034.gif" width="73"/>，称为合同关系。一般地，有<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.2：</span>设A、B为两个n阶矩阵，如果存在n阶可逆矩阵P，使得<img align="absmiddle" height="20" src="images/06/image037.gif" width="71"/>，则称A与B合同，记为<img align="absmiddle" height="17" src="images/06/image038.gif" width="43"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　方阵之间的合同关系具有下述<span class="bold">性质</span>：<br clear="none"/>
+　　（1）反身性，对任一n阶方阵<img align="absmiddle" height="17" src="images/06/image039.gif" width="16"/>，<img align="absmiddle" height="17" src="images/06/image040.gif" width="43"/>
+<br clear="none"/>
+　　（2）对称性，如果<img align="absmiddle" height="17" src="images/06/image038.gif" width="43"/>，则<img align="absmiddle" height="17" src="images/06/image041.gif" width="43"/>
+<br clear="none"/>
+　　（3）传递性，如果<img align="absmiddle" height="17" src="images/06/image038.gif" width="43"/>，<img align="absmiddle" height="19" src="images/06/image042.gif" width="43"/>，则<img align="absmiddle" height="19" src="images/06/image043.gif" width="43"/>。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　注：</span>对于n阶方阵A和B，我们曾经定义过两种关系：<br clear="none"/>
+　　<span class="bold">A和B等价</span>指的是存在可逆矩阵P和Q，使得<img align="absmiddle" height="21" src="images/06/image044.gif" width="64"/>，也就是A与B之间可以经过矩阵的初等变换实现互变，记为<img align="absmiddle" height="17" src="images/06/image045.gif" width="43"/>，此时<img align="absmiddle" height="21" src="images/06/image046.gif" width="80"/>，<br clear="none"/>
+<span class="bold">　　A和B相似</span>指的是存在可逆矩阵P，使<img align="absmiddle" height="20" src="images/06/image047.gif" width="73"/>，记为<img align="absmiddle" height="17" src="images/06/image048.gif" width="43"/>，此时也有<img align="absmiddle" height="21" src="images/06/image046.gif" width="80"/>，且A与B有相同的特征多项式。<br clear="none"/>
+　　<span class="bold">A和B合同</span>，指的是存在可逆矩阵P，使<img align="absmiddle" height="20" src="images/06/image037.gif" width="71"/>。<br clear="none"/>
+<br clear="none"/>
+　　由定义<span class="bold">可知</span>：两个相似的矩阵必等价，两个合同的矩阵也必等价，但反之都不一定。还要分清“合同关系”与“相似关系”的差别，但是，如存在正交矩阵P，使<img align="absmiddle" height="20" src="images/06/image047.gif" width="73"/>，则由<img align="absmiddle" height="20" src="images/06/image049.gif" width="60"/>，也就有<img align="absmiddle" height="20" src="images/06/image037.gif" width="71"/>，这说明两个正交相似的矩阵必正交合同的，反之，当然也对，即两个矩阵的正交相似与正交合同是一回事。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.3：</span>如果二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>，经过可逆线性变换<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>所化成的二次型<img align="absmiddle" height="24" src="images/06/image050.gif" width="71"/>只含有平方项，即<img align="absmiddle" height="25" src="images/06/image051.gif" width="215"/>，则把上述平方和称为<span class="bold">二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>的标准形</span>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　不难看出，平方和<img align="absmiddle" height="20" src="images/06/image035.gif" width="43"/>的矩阵B为n阶对角矩阵，即<img align="absmiddle" height="99" src="images/06/image052.gif" width="108"/>
+<br clear="none"/>
+　　本章的一个中心问题就是，对给定的n元二次型<img align="absmiddle" height="25" src="images/06/image032.gif" width="161"/>，能否找到可逆线性变换<img align="absmiddle" height="19" src="images/06/image030.gif" width="56"/>，把<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>化成标准形？这个问题的等价说法为：对给定的实对称矩阵A，它是否能与对角矩阵合同？</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　根据第五章第4节中对称矩阵基本定理，我们知道，对于任意一个n阶实对称矩阵A，一定存在n阶正交矩阵P，使得<img align="absmiddle" height="99" src="images/06/image053.gif" width="220"/>
+<br clear="none"/>
+　　而这个正交矩阵P就是由A的n个两两正交的单位特征向量所组成的，于是我们也就得到<span class="bold">二次型基本定理</span>：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理1.1：</span>对于任意一个n元二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>，一定存在正交变换<img align="absmiddle" height="17" src="images/06/image054.gif" width="56"/>，使得<img align="absmiddle" height="25" src="images/06/image055.gif" width="305"/>，其中<img align="absmiddle" height="24" src="images/06/image056.gif" width="79"/>就是A的n个特征值，我们把这种标准形称为<span class="bold">二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的相似标准形</span>，它的n个系数就是对称矩阵A的n个特征值。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例5：</span>设四元二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>的矩阵为<img align="absmiddle" height="96" src="images/06/image057.gif" width="123"/>，用正交变换把它化为标准形。<br clear="none"/>
+<span class="bold">　　解：</span>A的特征多项式：<img align="absmiddle" height="96" src="images/06/image058.gif" width="265"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>A的四个特征值为<img align="absmiddle" height="24" src="images/06/image059.gif" width="161"/>，属于<img align="absmiddle" height="24" src="images/06/image060.gif" width="51"/>的特征向量满足方程组<img align="absmiddle" height="21" src="images/06/image061.gif" width="107"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>由<img align="absmiddle" height="96" src="images/06/image062.gif" width="279"/>，可得单位特征向量<img align="absmiddle" height="96" src="images/06/image063.gif" width="77"/>，属于
+<br clear="none"/>
+<br clear="none"/>
+　　　　　<img align="absmiddle" height="24" src="images/06/image064.gif" width="101"/>的特征向量满足方程组<img align="absmiddle" height="21" src="images/06/image065.gif" width="89"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>由<img align="absmiddle" height="96" src="images/06/image066.gif" width="260"/>，即应满足方程组<img align="absmiddle" height="24" src="images/06/image067.gif" width="125"/>，可以由直观
+<br clear="none"/>
+　　　　　法求出三个两两正交且单位特征向量<img align="absmiddle" height="96" src="images/06/image068.gif" width="275"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>于是，有正交矩阵<img align="absmiddle" height="181" src="images/06/image069.gif" width="157"/>得正交变换<img align="absmiddle" height="17" src="images/06/image054.gif" width="56"/>，经这个正交变换二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>化为标准形。<br clear="none"/>
+<span class="bold">　　　　</span>
+<img align="absmiddle" height="25" src="images/06/image070.gif" width="169"/>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_1" id="part3_1">
+<h2>三、配方法求二次型的标准形</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　上面我们介绍了求二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>的相似标准形的方法，是通过A的特征值与特征向量，找到一个正交变换来把<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>化成标准形，且标准形中平方项的系数就是A的特征值。<br clear="none"/>
+　　实际上，对给定的二交型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>，我们未必要找出正交变换，而只要找可逆线性变换来把<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>化为标准形，下面介绍用<span class="bold">配方法</span>化<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>为标准形，用实例说明。<br clear="none"/>
+<span class="bold">　　例6：</span>用配方法求<img align="absmiddle" height="25" src="images/06/image071.gif" width="173"/>的标准形。<br clear="none"/>
+　　<span class="bold">解：</span> <img align="texttop" height="77" src="images/06/image072.gif" width="237"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>作可逆线性变换<img align="absmiddle" height="51" src="images/06/image073.gif" width="93"/>，即<img align="absmiddle" height="51" src="images/06/image074.gif" width="95"/>，得<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的标准形<img align="absmiddle" height="25" src="images/06/image075.gif" width="91"/>
+<br clear="none"/>
+<span class="bold">　　注意：</span>用配方法得到的<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的标准形称为<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的<span class="bold">合同标准形</span>，这种标准形的系数当然不一定是<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的矩阵的特征值。例如本例所得标准形的系数1，－3就不是<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的矩阵的特征值，实际上它的特征值为3，－1。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例7：</span>用配方法求<img align="absmiddle" height="24" src="images/06/image076.gif" width="224"/>的标准形。<br clear="none"/>
+<span class="bold">　　解：</span>本题中二次型没有出现平方项，为配出完全平方，我们先作如下可逆线性变换产生平方项。<br clear="none"/>
+<span class="bold">　　　　</span>令<img align="absmiddle" height="75" src="images/06/image077.gif" width="108"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>它把原二次型化为：<img align="texttop" height="127" src="images/06/image078.gif" width="393"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>再作可逆线性变换<img align="absmiddle" height="75" src="images/06/image079.gif" width="108"/>即<img align="absmiddle" height="75" src="images/06/image080.gif" width="108"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>也就有可逆线性变换<img align="absmiddle" height="75" src="images/06/image081.gif" width="116"/>，则<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的合同标准形<img align="absmiddle" height="25" src="images/06/image082.gif" width="139"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_1" id="part4_1">
+<h2>四、二次型的规范形</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　对任意一个n元实二次型，可以有两种方法得到二次型的标准形，由于所作的线性变换不同，标准形也未必相同，例如在例6中，二次型<img align="absmiddle" height="25" src="images/06/image083.gif" width="129"/>用配方法得到<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的标准形是<img align="absmiddle" height="25" src="images/06/image075.gif" width="91"/>，而若用正交变换，得到<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的标准形是<img align="absmiddle" height="25" src="images/06/image084.gif" width="91"/>，因此二次型的标准形不是唯一的，但是同一个二次型化为标准形后，标准形中系数不为零的平方项个数和正系数的平方项个数都是相同的，为深入讨论我们引入<span class="bold">二次型的规范形</span>的概念。<br clear="none"/>
+
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.4：</span>若n元二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的标准形中，所有平方项的系数仅为1，－1或0，即形如<img align="absmiddle" height="27" src="images/06/image085.gif" width="272"/>把这种标准形称为<span class="bold">二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的规范形</span>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理1.2（惯性定理）：</span>任意一个n元二次型<img align="absmiddle" height="24" src="images/06/image025.gif" width="76"/>都可以经过可逆线性变换化为规范形，且规范形是唯一的。即规范形中，<img align="absmiddle" height="17" src="images/06/image086.gif" width="16"/>和<img align="absmiddle" height="13" src="images/06/image087.gif" width="12"/>是由二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>唯一确的，<img align="absmiddle" height="13" src="images/06/image087.gif" width="12"/>就是<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的秩，即对称矩阵A的秩。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_2" id="part4_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例8：</span>设三元二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的标准形是<img align="absmiddle" height="25" src="images/06/image088.gif" width="133"/>，作可逆线性变换<img align="absmiddle" height="117" src="images/06/image089.gif" width="147"/>，则得到<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的规范形为<img align="absmiddle" height="25" src="images/06/image090.gif" width="113"/>
+<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义1.5：</span>规范形中的<img align="absmiddle" height="17" src="images/06/image086.gif" width="16"/>称为<span class="bold">二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的正惯性指数</span>，<img align="absmiddle" height="17" src="images/06/image091.gif" width="37"/>为<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>
+<span class="bold">的负惯性指数</span>，<img align="absmiddle" height="21" src="images/06/image092.gif" width="128"/>称为<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>
+<span class="bold">的符号差</span>。<br clear="none"/>
+　　惯性定理<span class="bold">指出</span>：二次型<img align="absmiddle" height="21" src="images/06/image018.gif" width="16"/>的正惯性指数、负惯性指数是唯一的，而且惯性定理可用<span class="bold">矩阵语言</span>来叙述：<br clear="none"/>
+　　对于任意一个n阶实对称矩阵A，它必合同于对角矩阵<img align="absmiddle" height="77" src="images/06/image093.gif" width="97"/>，其中<img align="absmiddle" height="17" src="images/06/image086.gif" width="16"/>为A的正惯性指数，<img align="absmiddle" height="13" src="images/06/image087.gif" width="12"/>为A的秩。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理1.3：</span>两个n阶对称矩阵A与B合同的充分必要条件是它们有相同的秩和相同的正惯性指数。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part4_3" id="part4_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例9：</span>在以下四个矩阵中，哪些是合同矩阵？哪些是不合同矩阵？<br clear="none"/>
+　　　　　<img align="absmiddle" height="75" src="images/06/image094.gif" width="396"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>四个矩阵均为对角矩阵，容易看出它们的秩都同为3，而A与C的正惯性指数同为1，所以A与C合同，B与D的正惯性指数同为2，所以B与D合同，但A与B不合同，B与C不合同。<br clear="none"/>
+
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,195 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§4.2 非齐次线性方程组</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>4.2 非齐次线性方程组</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<div id="know_j_04_03" class="part1_2">
+<h2>一、非齐次线性方程组解的结构</h2>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　<br clear="none"/>
+　　对于n元非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>，当<img align="absmiddle" height="25" src="images/04/image060.gif" width="103"/>时，方程组有解，又当<img align="absmiddle" height="15" src="images/04/image061.gif" width="36"/>时，方程组有无穷多解，这时，我们又如何来表示这全部解呢？<br clear="none"/>
+　　要特别<span class="bold">注意</span>到：由于非齐次性，即<img align="absmiddle" height="19" src="images/04/image062.gif" width="37"/>，则方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的两个解的和不再是它的解，即说明方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的解集合不构成向量空间，因而对于非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>根本不存在解空间与基础解系的概念。<br clear="none"/>
+　　对任一个非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>，一定对应一个齐次线性方程组<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>，称<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>为<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的<span class="bold">导出组</span>，它们的系数矩阵是相同的A，我们首先来讨论它们的解之间的性质：</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　性质1：</span>如果<img align="absmiddle" height="24" src="images/04/image063.gif" width="37"/>是非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的解，则<img align="absmiddle" height="24" src="images/04/image064.gif" width="69"/>是它的导出组<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>的解。<br clear="none"/>
+　　　　　　因为<img align="absmiddle" height="24" src="images/04/image065.gif" width="252"/>
+<br clear="none"/>
+<span class="bold">　　性质2：</span>如果<img align="absmiddle" height="17" src="images/04/image066.gif" width="13"/>是非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的解，<img align="absmiddle" height="21" src="images/04/image003.gif" width="13"/>是它的导出组<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>的解，则<img align="absmiddle" height="21" src="images/04/image067.gif" width="37"/>总是<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的解。<br clear="none"/>
+　　　　　　因为<img align="absmiddle" height="21" src="images/04/image068.gif" width="197"/>
+<br clear="none"/>
+　　由性质1和性质2可知：<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的任意一个解<img align="absmiddle" height="17" src="images/04/image066.gif" width="13"/>一定可以写成<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的任意一个取定的解<img align="absmiddle" height="24" src="images/04/image069.gif" width="17"/>（称为<span class="bold">特解</span>）与导出组<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>的任意一个解<img align="absmiddle" height="21" src="images/04/image003.gif" width="13"/>之和，于是得到定理：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理2.1：</span>设n元非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>满足<img align="absmiddle" height="25" src="images/04/image070.gif" width="127"/>，并设<img align="absmiddle" height="24" src="images/04/image069.gif" width="17"/>为其一个特解，又<img align="absmiddle" height="24" src="images/04/image023.gif" width="85"/>为导出组<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>的一个基础解系，则<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的通解为<img align="absmiddle" height="24" src="images/04/image071.gif" width="211"/>（<img align="absmiddle" height="24" src="images/04/image025.gif" width="87"/>为任意常数）</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>设<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>为4元非齐次线性方程组，<img align="absmiddle" height="21" src="images/04/image072.gif" width="57"/>，设<img align="absmiddle" height="24" src="images/04/image073.gif" width="56"/>为<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的三个解，已知<img align="absmiddle" height="25" src="images/04/image074.gif" width="224"/>，求<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的通解。<br clear="none"/>
+<span class="bold">　　解：</span>由定理2。1，非齐次线性方程组的通解由两部分相加组成，一部分是本身方程组的一个特解，另一部分是对应导出组的通解，即对应导出组的基础解系的任意线性组合对本题可取<img align="absmiddle" height="24" src="images/04/image075.gif" width="16"/>为一个特解，因而关键找导出组的一个基础解系，它含有<img align="absmiddle" height="19" src="images/04/image076.gif" width="100"/>个解，即任意一个非零解<img align="absmiddle" height="21" src="images/04/image003.gif" width="13"/>都是导出组的基础解系。<br clear="none"/>
+<span class="bold">　　　　</span>因为<img align="absmiddle" height="24" src="images/04/image073.gif" width="56"/>都是<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的解，所以<img align="absmiddle" height="24" src="images/04/image077.gif" width="45"/>和<img align="absmiddle" height="24" src="images/04/image078.gif" width="44"/>都是<img align="absmiddle" height="19" src="images/04/image001.gif" width="52"/>的解，它们的和<img align="absmiddle" height="25" src="images/04/image079.gif" width="340"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>就是<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的一个非零解，也就是<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的一个基础解系，因而<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>的通解为<br clear="none"/>
+<img align="absmiddle" height="24" src="images/04/image080.gif" width="75"/>，<img align="absmiddle" height="19" src="images/04/image009.gif" width="13"/>为任意实数。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<div id="know_j_04_04" class="part2_1">
+<h2>二、非齐次线性方程组的通解的求法</h2>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　在非齐次线性方程组<img align="absmiddle" height="19" src="images/04/image059.gif" width="52"/>有无穷多解时，首先求出方程组的一般解，即约束未知量由自由未知量所表示的表达式，然后把一般解改写为列向量的形式，即可得到方程组的通解。<br clear="none"/>
+
+<span class="bold">　　例2：</span>求<img align="absmiddle" height="75" src="images/04/image081.gif" width="151"/>的通解。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="75" src="images/04/image082.gif" width="277"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>因此，<img align="absmiddle" height="25" src="images/04/image083.gif" width="152"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>方程组的一般解为<img align="absmiddle" height="99" src="images/04/image084.gif" width="120"/>，即<img align="absmiddle" height="99" src="images/04/image085.gif" width="189"/>，
+<br clear="none"/>
+　　　　则取<img align="absmiddle" height="25" src="images/04/image086.gif" width="96"/>为一个特解。<br clear="none"/>
+<span class="bold">　　　　</span>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="25" src="images/04/image087.gif" width="212"/>为导出组的一个基础解系，从而方程组的通解为
+<br clear="none"/>
+　　　　<img align="absmiddle" height="24" src="images/04/image088.gif" width="121"/>（<img align="absmiddle" height="24" src="images/04/image089.gif" width="35"/>为任意常数）</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例3：</span>当参数a为何值时，方程组<img align="absmiddle" height="99" src="images/04/image090.gif" width="164"/>有解？当它有解时，求出它的通解。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="96" src="images/04/image091.gif" width="325"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>当<img align="absmiddle" height="19" src="images/04/image092.gif" width="35"/>时，<img align="absmiddle" height="25" src="images/04/image083.gif" width="152"/>，方程组有无穷多解，且一般解为<img align="absmiddle" height="99" src="images/04/image093.gif" width="143"/>，则方程组的通解为<img align="absmiddle" height="96" src="images/04/image094.gif" width="191"/>（<img align="absmiddle" height="24" src="images/04/image089.gif" width="35"/>为任意常数）<br clear="none"/>
+<span class="bold">　　　　</span>显然，当<img align="absmiddle" height="19" src="images/04/image095.gif" width="35"/>时，<img align="absmiddle" height="25" src="images/04/image096.gif" width="116"/>，则方程组无解。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例4：</span>参数<img align="absmiddle" height="19" src="images/04/image097.gif" width="15"/>为何值时，方程组<img align="absmiddle" height="77" src="images/04/image098.gif" width="124"/>无解？有唯一解？有无穷多解？无穷多解时，求出它的通解。<br clear="none"/>
+<span class="bold">　　解：</span>因为方程个数与未知量个数相同，又参数出现在系数矩阵中，作初等行变换比较麻烦，所以用克兰姆法则，即系数矩阵A的行列式入手<img align="absmiddle" height="75" src="images/04/image099.gif" width="319"/>
+<img align="absmiddle" height="24" src="images/04/image100.gif" width="105"/>
+<br clear="none"/>
+　　　　（1）当<img align="absmiddle" height="19" src="images/04/image101.gif" width="48"/>且<img align="absmiddle" height="19" src="images/04/image102.gif" width="36"/>时，<img align="absmiddle" height="27" src="images/04/image103.gif" width="45"/>，则方程组有唯一解<br clear="none"/>
+　　　　（2）当<img align="absmiddle" height="19" src="images/04/image104.gif" width="48"/>时，<img align="absmiddle" height="75" src="images/04/image105.gif" width="248"/>
+<br clear="none"/>
+<span class="bold">　　　　　　</span>可见<img align="absmiddle" height="25" src="images/04/image096.gif" width="116"/>，则方程组无解<br clear="none"/>
+　　　　（3）当<img align="absmiddle" height="19" src="images/04/image106.gif" width="36"/>时，<img align="absmiddle" height="75" src="images/04/image107.gif" width="173"/>
+<br clear="none"/>
+<span class="bold">　　　　　　</span>可见<img align="absmiddle" height="25" src="images/04/image108.gif" width="148"/>，则方程组有无穷多解，且一般解为<img align="absmiddle" height="75" src="images/04/image109.gif" width="103"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>所以方程组的通解为<img align="absmiddle" height="75" src="images/04/image110.gif" width="173"/>（<img align="absmiddle" height="24" src="images/04/image089.gif" width="35"/>为任意常数）<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_04_03" class="popup-questions" knowid="know_j_04_03" syncpart="part1_2">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="d" score="100">
+<p class="label">(单选题) 19．<img src="images/04/ch0402_clip_image1.jpg" width="402" height="101" align="absmiddle"></p>
+<ul class="options">
+         <li code="a">A.<img src="images/04/2.jpg" width="114" height="28" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/04/3.jpg" width="121" height="29" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/04/4.jpg" width="113" height="25" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/04/5.jpg" width="104" height="29" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】D</p>
+<p>【解析】<img src="images/04/image150.gif" width="480" height="224" align="texttop"></p>
+<p>【知识点】非齐次线性方程组解的结构</p>
+</div>
+</div>
+</div>
+
+<div id="ques_04_04" class="popup-questions" knowid="know_j_04_04" syncpart="part2_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="a" score="100">
+<p class="label">(单选题) 20．已知某个3元非齐次线性方程组<strong><em>Ax=b</em></strong>的增广矩阵<img src="images/04/image153.gif" width="17" height="22" align="absmiddle">经初等行变换化为：<img src="images/04/image151.gif" width="195" height="72" align="absmiddle">，若方程组无解，则<em>a</em>的取值为<strong>(       )</strong></p>
+<ul class="options">
+         <li code="a">A.0</li>
+	 <li code="b">B.1</li>
+	 <li code="c">C.2</li>
+	 <li code="d">D.3</li>
+</ul>
+<div class="answer">
+<p>【答案】A</p>
+<p>【解析】只有当<img src="images/04/image154.gif" width="143" height="28" align="absmiddle">时，方程组无解，故要求<img src="images/04/image155.gif" width="173" height="28" align="absmiddle">，解得a=0..</p>
+<p>【知识点】非齐次线性方程组的通解的求法</p>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+

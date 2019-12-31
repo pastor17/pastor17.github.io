@@ -1,0 +1,241 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§2.6 矩阵的秩</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>2.6 矩阵的秩</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、矩阵的子式</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义：</span>设有<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵A，在A中任意取定k个行和k个列，<img align="absmiddle" height="27" src="images/02/image321.gif" width="95"/>，位于这些行与列交叉处的元素按原来的相对顺序排成一个k阶行列式，称它为<span class="bold">矩阵A的一个<img align="absmiddle" height="19" src="images/02/image322.gif" width="13"/>阶子式</span>，特别地，A中每一个元素就是A的一阶子式。<br clear="none"/>
+　　对于确定的k，在<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵A中，总共有<img align="absmiddle" height="25" src="images/02/image323.gif" width="53"/>个k阶子式，这些子式的值有的可能是零，也可能不为零。把值不为零的子式称为<span class="bold">非零子式</span>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<br clear="none"/>
+　　例如，设<img align="absmiddle" height="96" src="images/02/image324.gif" width="131"/>为4×5矩阵。<br clear="none"/>
+　　在A中共有5个4阶子式，但由于A中第4行为零行，因而所有4阶子式全为零。对于A中的3阶子式，显然出现非零子式，例如由前三行与第1，2，4列组成的3阶子式就是非零的。讨论说明A中非零子式的最高阶数为3，这个数字对矩阵很重要，我们引入矩阵的秩的概念。<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、矩阵的秩</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_02_07" class="part2_1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义6.1：</span>在<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵A中，非零子式的最高阶数称为矩阵A的秩，记为<img align="absmiddle" height="21" src="images/02/image325.gif" width="35"/>或秩<img align="absmiddle" height="21" src="images/02/image326.gif" width="27"/>。<br clear="none"/>
+　　规定零矩阵的秩为零。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　由定义说明：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理1：</span>
+<img align="absmiddle" height="21" src="images/02/image327.gif" width="92"/>中所有r+1阶子式（如果有的话）全为零，而A中至少有一个r阶子式非零。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　由定义求矩阵的秩是很麻烦的，如何求出矩阵的秩？<br clear="none"/>
+　　对前面例子中矩阵A，它是一个阶梯形矩阵，我们发现它的秩就是A中非零行的行数，对一般的阶梯形矩阵，相同地有：<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<span class="bold">定理6.1：</span>若A是阶梯形矩阵，其秩就是A中非零行的行数。<br clear="none"/>
+　　<span class="bold">定理6.2：</span>对矩阵施行初等变换，不改变矩阵的秩。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　综合定理6.1，6.2有下述<span class="bold">求矩阵的秩的方法</span>：<br clear="none"/>
+　　矩阵A<img align="absmiddle" height="23" src="images/02/image328.gif" width="84"/>阶梯形矩阵B。<br clear="none"/>
+　　则<img align="absmiddle" height="21" src="images/02/image329.gif" width="107"/>中非零行的行数。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例1：</span>求矩阵<img align="absmiddle" height="75" src="images/02/image330.gif" width="123"/>的秩。<br clear="none"/>
+<span class="bold">　　解：</span>
+<img align="absmiddle" height="75" src="images/02/image331.gif" width="255"/>
+<img align="absmiddle" height="75" src="images/02/image332.gif" width="104"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>因此<img align="absmiddle" height="21" src="images/02/image333.gif" width="59"/>
+<br clear="none"/>
+<br clear="none"/>
+　　关于矩阵的秩，有以下<span class="bold">结论</span>：<br clear="none"/>
+　　（1）设A为<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵，则<img align="absmiddle" height="27" src="images/02/image334.gif" width="116"/>
+<br clear="none"/>
+　　（2）<img align="absmiddle" height="24" src="images/02/image335.gif" width="88"/>
+<br clear="none"/>
+　　（3）设A为<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵，P和Q分别为m阶和n阶可逆矩阵，则<img align="absmiddle" height="21" src="images/02/image336.gif" width="293"/>
+<br clear="none"/>
+　　（4）n阶方阵A为可逆矩阵<img align="absmiddle" height="27" src="images/02/image337.gif" width="144"/>。<br clear="none"/>
+　　所以，<span class="bold">可逆矩阵常称为满秩矩阵</span>。<br clear="none"/>
+　　把秩为m的<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵称为<span class="bold">行满秩矩阵</span>，把秩为n的<img align="absmiddle" height="15" src="images/02/image010.gif" width="37"/>矩阵称为<span class="bold">列满秩矩阵</span>。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>设<img align="absmiddle" height="75" src="images/02/image338.gif" width="203"/>，求<img align="absmiddle" height="21" src="images/02/image339.gif" width="45"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>容易看出<img align="absmiddle" height="27" src="images/02/image340.gif" width="75"/>，A为可逆矩阵。<br clear="none"/>
+<span class="bold">　　　　</span>B为阶梯形矩阵，<img align="absmiddle" height="21" src="images/02/image341.gif" width="57"/>，由上面性质（3），可知<img align="absmiddle" height="21" src="images/02/image342.gif" width="113"/>。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_02_07" class="popup-questions" knowid="know_j_02_07" syncpart="part2_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="c" score="100">
+<p class="label">(单选题) 10．设矩阵<em>A</em>=<img src="images/02/ch0206_clip_image002.gif" width="66" height="66" align="absmiddle">，矩阵<em>B=A-E</em>，则矩阵<em>B</em>的秩r(<em>B</em>)=（    ）。</p>
+<ul class="options">
+         <li code="a">A.0</li>
+	     <li code="b">B.1</li>
+	     <li code="c">C.2</li>
+	     <li code="d">D.3</li>
+</ul>
+<div class="answer">
+<p>【答案】C</p>
+<p>【解析】因为B=A-E<em>=<img src="images/02/ch0206_clip_image002_0000.gif" width="240" height="75" align="absmiddle"></em><br>
+所以r(<em>B</em>)=2。 </p>
+<p>【知识点】矩阵的秩</p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+

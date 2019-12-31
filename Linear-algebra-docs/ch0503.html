@@ -1,0 +1,493 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>§5.3 向量内积和正交矩阵</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<h1><center>5.3 向量内积和正交矩阵</center></h1>
+<div class="page-part" code="part1_2" id="part1_2">
+<h2>一、向量内积</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　<br clear="none"/>
+　　我们知道在n维向量空间<img align="absmiddle" height="20" src="images/05/image211.gif" width="21"/>中，只有加法，减法与数乘这三种运算，没有乘法运算，因为两个列向量或两个行向量是不能做乘法，但是在前面第二章，我们曾计算同维数的行向量与列向量的乘积，其结果为一个数，这一节将对这个数进行讨论。<br clear="none"/>
+
+　　我们考虑n维行向量空间<img align="absmiddle" height="29" src="images/05/image212.gif" width="217"/>
+<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义3.1：</span>设<img align="absmiddle" height="24" src="images/05/image213.gif" width="232"/>为两个n维行向量，把它们的对应分量相乘再相加，即<img align="absmiddle" height="45" src="images/05/image214.gif" width="47"/>称为<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>与<img align="absmiddle" height="21" src="images/05/image216.gif" width="17"/>的内积，记成<img align="absmiddle" height="21" src="images/05/image217.gif" width="44"/>，即<img align="absmiddle" height="45" src="images/05/image218.gif" width="101"/>
+<br clear="none"/>
+　　故两个同维向量的内积为一个实数。<br clear="none"/>
+　　利用矩阵乘法，显然<img align="absmiddle" height="24" src="images/05/image219.gif" width="87"/>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<p>
+  <span class="bold">　　例1：</span>求<img align="absmiddle" height="21" src="images/05/image220.gif" width="116"/>与<img align="absmiddle" height="21" src="images/05/image221.gif" width="99"/>的内积。<br clear="none"/>
+  <span class="bold">　　解：</span> <img align="absmiddle" height="21" src="images/05/image222.gif" width="315"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_05_03" class="part1_3">
+　　向量的内积有以下<span class="bold">基本性质</span>：<br clear="none"/>
+　　设<img align="absmiddle" height="24" src="images/05/image223.gif" width="137"/>，<br clear="none"/>
+　　（1）对称性 <img align="absmiddle" height="21" src="images/05/image224.gif" width="99"/>
+<br clear="none"/>
+　　（2）线性性 <img align="absmiddle" height="21" src="images/05/image225.gif" width="179"/>，<img align="absmiddle" height="21" src="images/05/image226.gif" width="165"/>
+<br clear="none"/>
+　　（3）非负性 <img align="absmiddle" height="21" src="images/05/image227.gif" width="67"/>，而且<img align="absmiddle" height="21" src="images/05/image228.gif" width="125"/>
+<br clear="none"/>
+　　（4）<img align="absmiddle" height="24" src="images/05/image229.gif" width="144"/>，其中等号成立当且仅当<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>与<img align="absmiddle" height="21" src="images/05/image216.gif" width="17"/>线性相关。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义3.2：</span>设<img align="absmiddle" height="24" src="images/05/image230.gif" width="116"/>，把实数<img align="absmiddle" height="27" src="images/05/image231.gif" width="55"/>称为向量<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>的长度，记成<img align="absmiddle" height="29" src="images/05/image232.gif" width="25"/>，当<img align="absmiddle" height="29" src="images/05/image233.gif" width="47"/>时，称<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>为单位向量。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　向量的长度有以下<span class="bold">基本性质</span>：<br clear="none"/>
+　　（1）非负性 <img align="absmiddle" height="29" src="images/05/image234.gif" width="49"/>，且<img align="absmiddle" height="29" src="images/05/image235.gif" width="108"/>
+<br clear="none"/>
+　　（2）齐次性 <img align="absmiddle" height="29" src="images/05/image236.gif" width="180"/>
+<br clear="none"/>
+　　（3）三角不等式 <img align="absmiddle" height="27" src="images/05/image237.gif" width="123"/>
+<br clear="none"/>
+　　而<img align="absmiddle" height="20" src="images/05/image211.gif" width="21"/>中n个标准向量<img align="absmiddle" height="24" src="images/05/image238.gif" width="77"/>，显然都是单位向量，故也称它们为n维标准单位向量，由数乘可得到：<br clear="none"/>
+　　<span class="bold">命题：</span>设<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>为任一个非零向量，则<img align="absmiddle" height="47" src="images/05/image239.gif" width="67"/>必为单位向量，称为把非零向量<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>单位化。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_5" id="part1_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例2：</span>把以下向量单位化（1）<img align="absmiddle" height="21" src="images/05/image240.gif" width="73"/>，（2）<img align="absmiddle" height="21" src="images/05/image241.gif" width="77"/>
+<br clear="none"/>
+<span class="bold">　　解：</span>（1）<img align="absmiddle" height="31" src="images/05/image242.gif" width="164"/>，则<img align="absmiddle" height="44" src="images/05/image243.gif" width="164"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>（2）因<img align="absmiddle" height="21" src="images/05/image244.gif" width="177"/>，<img align="absmiddle" height="47" src="images/05/image245.gif" width="287"/>
+<br clear="none"/>
+　　<span class="bold">说明：</span>在求<img align="absmiddle" height="21" src="images/05/image246.gif" width="125"/>的单位化向量时，可把正倍数<img align="absmiddle" height="19" src="images/05/image056.gif" width="13"/>去掉，直接求<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>的单位化向量。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义3.3：</span>设<img align="absmiddle" height="24" src="images/05/image247.gif" width="64"/>，若<img align="absmiddle" height="21" src="images/05/image248.gif" width="68"/>，则称<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>与<img align="absmiddle" height="21" src="images/05/image216.gif" width="17"/>正交，记为<img align="absmiddle" height="21" src="images/05/image249.gif" width="45"/>。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　显然，零向量与任何同维向量都正交。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_6" id="part1_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例3：</span>取定<img align="absmiddle" height="21" src="images/05/image250.gif" width="47"/>，考虑在<img align="absmiddle" height="20" src="images/05/image211.gif" width="21"/>中与此<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>正交的所有向量全体组成的向量集合：<img align="absmiddle" height="29" src="images/05/image251.gif" width="188"/>，则<img align="absmiddle" height="19" src="images/05/image252.gif" width="16"/>为<img align="absmiddle" height="20" src="images/05/image211.gif" width="21"/>的子空间，称为<img align="absmiddle" height="15" src="images/05/image215.gif" width="16"/>在<img align="absmiddle" height="20" src="images/05/image211.gif" width="21"/>中的正交子空间。<br clear="none"/>
+<span class="bold">　　证：</span>因<img align="absmiddle" height="19" src="images/05/image253.gif" width="43"/>，知道<img align="absmiddle" height="19" src="images/05/image252.gif" width="16"/>为非空的。<br clear="none"/>
+<span class="bold">　　　　</span>对<img align="absmiddle" height="21" src="images/05/image254.gif" width="69"/>，由于<img align="absmiddle" height="21" src="images/05/image255.gif" width="203"/>，故<img align="absmiddle" height="19" src="images/05/image256.gif" width="69"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>对<img align="absmiddle" height="21" src="images/05/image257.gif" width="87"/>，<img align="absmiddle" height="21" src="images/05/image258.gif" width="141"/>，故<img align="absmiddle" height="19" src="images/05/image259.gif" width="51"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>所以<img align="absmiddle" height="19" src="images/05/image252.gif" width="16"/>是<img align="absmiddle" height="20" src="images/05/image211.gif" width="21"/>的子空间。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_7" id="part1_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　定义3.4：</span>如果一个向量组中不含有零向量，且其中任意两个向量都正交，则称它为正交向量组。<br clear="none"/>
+<br clear="none"/>
+<span class="bold">　　定义3.5：</span>若正交向量组中每个向量都是单位向量，称它为单位正交向量组（或标准正交向量组）。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　 显然n维标准向量组<img align="absmiddle" height="24" src="images/05/image260.gif" width="76"/>是标准正交向量组。<br clear="none"/>
+　　又如，<img align="absmiddle" height="41" src="images/05/image261.gif" width="208"/>，<img align="absmiddle" height="41" src="images/05/image262.gif" width="109"/>也是标准正交向量组。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_8" id="part1_8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例4：</span>求出非零向量<img align="absmiddle" height="13" src="images/05/image263.gif" width="12"/>，使得<img align="absmiddle" height="13" src="images/05/image263.gif" width="12"/>与<img align="absmiddle" height="21" src="images/05/image264.gif" width="69"/>，<img align="absmiddle" height="21" src="images/05/image265.gif" width="81"/>都正交。<br clear="none"/>
+<span class="bold">　　解：</span>设<img align="absmiddle" height="24" src="images/05/image266.gif" width="91"/>，由正交要求，得<img align="absmiddle" height="51" src="images/05/image267.gif" width="165"/>一般解为<img align="absmiddle" height="51" src="images/05/image268.gif" width="64"/>，于是<img align="absmiddle" height="21" src="images/05/image269.gif" width="85"/>，a为任意非零实数。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理3.1：</span>正定向量组一定是线性无关组。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<span class="bold">　　证：</span>设<img align="absmiddle" height="24" src="images/05/image270.gif" width="133"/>是一个正交向量组。<br clear="none"/>
+<span class="bold">　　　　</span>设有<img align="absmiddle" height="24" src="images/05/image271.gif" width="173"/>，等式两边与<img align="absmiddle" height="24" src="images/05/image272.gif" width="108"/>作内积，得到<img align="absmiddle" height="24" src="images/05/image273.gif" width="85"/>，但由<img align="absmiddle" height="24" src="images/05/image274.gif" width="119"/>，则<img align="absmiddle" height="24" src="images/05/image275.gif" width="40"/>
+<img align="absmiddle" height="21" src="images/05/image276.gif" width="95"/>，于是<img align="absmiddle" height="24" src="images/05/image277.gif" width="85"/>为线性无关组。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_9" id="part1_9">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　但线性无关向量组未必是正交向量组，我们有以下把线性无关向量组改造成等价的正交向量组的方法，即施密特正交化方法。<br clear="none"/>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理3.2：</span>设<img align="absmiddle" height="24" src="images/05/image277.gif" width="85"/>为线性无关向量组。<br clear="none"/>
+<span class="bold">　　</span>令<img align="absmiddle" height="24" src="images/05/image278.gif" width="49"/>
+<br clear="none"/>
+　　<img align="absmiddle" height="117" src="images/05/image279.gif" width="287"/>
+<br clear="none"/>
+　　则<img align="absmiddle" height="24" src="images/05/image280.gif" width="87"/>是与<img align="absmiddle" height="24" src="images/05/image277.gif" width="85"/>等价的正交向量组。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part1_10" id="part1_10">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<span class="bold">　　例5：</span>将<img align="absmiddle" height="25" src="images/05/image281.gif" width="285"/>标准正交化（即单位正交化）<br clear="none"/>
+<span class="bold">　　解：</span>先正交化<br clear="none"/>
+<span class="bold">　　　　</span>令<img align="absmiddle" height="25" src="images/05/image282.gif" width="113"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="88" src="images/05/image283.gif" width="259"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="135" src="images/05/image284.gif" width="273"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>再单位化，得<img align="absmiddle" height="44" src="images/05/image285.gif" width="317"/>
+<br clear="none"/>
+　　<span class="bold">说明：</span>必须先正交化，再单位化，否则，单位化工作就白做了。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_1" id="part2_1">
+<h2>二、正交矩阵</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定义3.6：</span>如果n阶实方阵A满足<img align="absmiddle" height="20" src="images/05/image286.gif" width="61"/>，则称A为正交矩阵。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　例如<img align="absmiddle" height="48" src="images/05/image287.gif" width="107"/>是正交矩阵<br clear="none"/>
+<br clear="none"/>
+　　正交矩阵的<span class="bold">基本性质</span>：<br clear="none"/>
+　　（1）A为正交矩阵<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>A可逆，且<img align="absmiddle" height="20" src="images/05/image288.gif" width="60"/>
+<br clear="none"/>
+　　（2）A为正交矩阵<img align="absmiddle" height="16" src="images/05/image015.gif" width="23"/>
+<img align="absmiddle" height="20" src="images/05/image289.gif" width="61"/>
+<br clear="none"/>
+　　（3）A为正交矩阵，则<img align="absmiddle" height="27" src="images/05/image290.gif" width="52"/>
+<br clear="none"/>
+　　（4）当A为正交矩阵时，<img align="absmiddle" height="24" src="images/05/image291.gif" width="72"/>也是正交矩阵<br clear="none"/>
+　　（5）当A，B为同阶正交矩阵时，AB也是正交矩阵。<br clear="none"/>
+　　（5）的证明：由<img align="absmiddle" height="24" src="images/05/image292.gif" width="125"/>
+<br clear="none"/>
+　　所以<img align="absmiddle" height="24" src="images/05/image293.gif" width="177"/>
+<br clear="none"/>
+　　也就有：有限个正交矩阵的乘积一定是正交矩阵。</td>
+</tr>
+</table>
+</div>
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+<span class="bold">　　定理3.3：</span>n阶实方阵A是正交矩阵的充分必要条件为A的n个行（列）向量是正交单位向量组。</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<span class="bold">证：</span>以三阶矩阵来证<br clear="none"/>
+<span class="bold">　　　　</span>设A的三个行向量为<img align="absmiddle" height="24" src="images/05/image294.gif" width="61"/>，则<img align="absmiddle" height="83" src="images/05/image295.gif" width="328"/>
+<br clear="none"/>
+<span class="bold">　　　　</span>所以<img align="absmiddle" height="48" src="images/05/image296.gif" width="192"/>，这就证明了A是正交矩阵当且仅当<img align="absmiddle" height="24" src="images/05/image294.gif" width="61"/>是单位正交向量组。<br clear="none"/>
+<span class="bold">　　　　</span>对于A的列向量组，由于<img align="absmiddle" height="20" src="images/05/image100.gif" width="23"/>也正交，而A的列向量组就是<img align="absmiddle" height="20" src="images/05/image100.gif" width="23"/>的行向量组，于是也就有A正交的充要条件是A的列向量组为正交单位向量组。<br clear="none"/>
+<br clear="none"/>
+　　　　正交矩阵是一类在实用上很有意义的矩阵，它比可逆矩阵的条件还要强，可逆矩阵不一定正交。<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_05_03" class="popup-questions" knowid="know_j_05_03" syncpart="part1_3">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="b" score="100">
+<p class="label">(单选题) 23．已知向量α=(2,1,0,3)<sup>T</sup>，β=(1,-2,1,k)<sup>T</sup>,α与β的内积为2,则数K=( )</p>
+<ul class="options">
+        <li code="a">A.<img src="images/05/2.gif" width="23" height="43" align="absmiddle"></li>
+        <li code="b">B.<img src="images/05/3.gif" width="19" height="46" align="absmiddle"></li>
+	 <li code="c">C.0</li>
+	 <li code="d">D.2</li>
+</ul>
+<div class="answer">
+<p>【答案】B</p>
+<p>【解析】<img src="images/05/ch0503_clip_image002_0000.gif" width="303" height="41" align="absmiddle"></p>
+<p>【知识点】向量内积</p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+
